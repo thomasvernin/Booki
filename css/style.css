@@ -22,6 +22,65 @@ body {
     justify-content: center;
 }
 
+/************************************
+*            header + nav           *
+************************************/
+
+/* Styles pour l'élément header */
+header {
+    display: flex; /* Transforme l'en-tête en un conteneur flex */
+    justify-content: space-between; /* Aligne les éléments le long de l'axe principal avec de l'espace entre eux */
+    padding: 1px; /* Ajoute un remplissage autour de l'en-tête */
+}
+
+/* Styles pour le logo à l'intérieur de l'en-tête */
+header #logo {
+    padding: 25px 0px; /* Ajoute un remplissage au logo */
+}
+
+/* Styles pour les images à l'intérieur du logo */
+header #logo img {
+    width: 150px; /* Définit la largeur de l'image du logo */
+}
+
+/* Styles pour la liste de navigation à l'intérieur de l'en-tête */
+header nav ul {
+    display: flex; /* Transforme la liste de navigation en un conteneur flex */
+    list-style-type: none; /* Supprime les styles de liste par défaut */
+    margin: 0; /* Supprime la marge */
+}
+
+/* Styles pour les éléments li à l'intérieur de la liste de navigation */
+header nav ul li {
+    padding: 30px 25px 50px 25px; /* Ajoute un remplissage à chaque élément de liste */
+    border-top: 4px solid transparent; /* Ajoute une bordure transparente en haut */
+    margin: 0px 20px 0px 20px; /* Définit la marge autour de chaque élément de liste */
+    transition: border-color 0.3s, color 0.3s; /* Ajoute une transition pour une animation fluide */
+    font-size: 20px; /* Faire grossir la taille du texte */
+}
+
+/* Styles pour l'effet de survol sur les éléments li */
+header nav ul li:hover {
+    border-color: var(--main-color); /* Change la couleur de la bordure au survol en utilisant une variable CSS */
+    color: var(--main-color); /* Change la couleur du texte au survol en utilisant une variable CSS */
+}
+
+/* Styles pour les balises ancre à l'intérieur des éléments li */
+header nav ul li a {
+    color: black; /* Définit la couleur du texte pour les balises ancre */
+    text-decoration: none; /* Supprime le soulignement des balises ancre */
+}
+
+/* Styles pour les balises ancre au survol */
+header nav ul li:hover a {
+    color: var(--main-color); /* Change la couleur du texte au survol en utilisant une variable CSS */
+}
+
+
+
+
+
+
 /* Conteneur principal avec une largeur maximale et un remplissage */
 .main-container {
     width: 100%;
