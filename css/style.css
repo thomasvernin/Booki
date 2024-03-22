@@ -1,23 +1,28 @@
 /****** General ***********/
+/* Applique la police 'Raleway' à tous les éléments de la page */
 * {
     font-family: 'Raleway', sans-serif;
 }
 
+/* Définit les variables de couleur principales */
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
 
+/* Applique la couleur principale aux icônes de la bibliothèque Font Awesome */
 .fa-solid {
     color: var(--main-color);
 }
 
+/* Définit la mise en page de base pour le corps de la page */
 body {
     display: flex;
     justify-content: center;
 }
 
+/* Conteneur principal avec une largeur maximale et un remplissage */
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -25,16 +30,19 @@ body {
     box-sizing: border-box;
 }
 
+/* Applique les styles de lien par défaut */
 a {
     color: inherit;
     text-decoration: none;
 }
 
+/* Style du titre de section */
 .section-title {
     margin: 0;
     font-size: 22px;
 }
 
+/* Style de base pour une carte */
 .card {
     background-color: white;
     border-radius: 20px;
@@ -42,28 +50,34 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+/* Style pour les images à l'intérieur des cartes */
 .card img {
     object-fit: cover;
 }
 
+/* Style pour le titre de la carte */
 .card-title {
     font-size: 16px;
 }
 
+/* Style pour le texte 'euro' */
 .euro {
     font-weight: 700;
 }
 
+/* Style pour l'étoile neutre */
 .neutral-star {
     color: var(--main-bg-color)
 }
 
 /****** Hebergements And Populaires ***********/
+/* Style pour le conteneur des sections 'hebergements-and-populaires' */
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
 }
 
+/* Style pour les sections 'hebergements-and-populaires' */
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
@@ -72,26 +86,31 @@ a {
 }
 
 /****** Hebergements ***********/
+/* Style pour la section 'hebergements' */
 .hebergements {
     width: 65%;
 }
 
 /****** Populaires ***********/
+/* Style pour la section 'populaires' */
 .populaires {
     width: 32%;
 }
 
+/* Style pour le titre de la section 'populaires' */
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Style pour les cartes à l'intérieur de la section 'populaires' */
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
 }
 
+/* Style pour les images à l'intérieur des cartes 'populaires' */
 .populaires-cards img {
     width: 33%;
     height: 136px;
@@ -99,6 +118,7 @@ a {
     border-bottom-left-radius: 20px;
 }
 
+/* Style pour le contenu de la carte 'populaires' */
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
@@ -108,54 +128,61 @@ a {
     box-sizing: border-box;
 }
 
+/* Style pour le titre de la carte 'populaires' */
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
+/* Style pour le sous-titre de la carte 'populaires' */
 .populaires-cards .card-subtitle {
     margin: 0;
 }
 
+/* Style pour la notation de la carte 'populaires' */
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    /* Réorganise les sections en colonnes pour les appareils de taille moyenne */
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
+    /* Ajuste la largeur des sections pour les appareils de taille moyenne */
     .hebergements {
         width: 100%;
     }
 
+    /* Ajuste la largeur des sections pour les appareils de taille moyenne */
     .populaires {
         width: 100%;
         margin-top: 50px;
     }
 
+    /* Réorganise les cartes populaires en ligne pour les appareils de taille moyenne */
     .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
+    /* Ajuste la largeur des liens des cartes populaires pour les appareils de taille moyenne */
     .populaires-cards a {
         width: 30%;
     }
 
+    /* Ajuste la taille du titre de la carte pour les appareils de taille moyenne */
     .populaires-cards .card-title {
         font-size: 14px;
     }
 
+    /* Ajuste la taille du sous-titre de la carte pour les appareils de taille moyenne */
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
@@ -165,3 +192,4 @@ a {
 @media (max-width: 767.98px) {
     /* ... */
 }
+
