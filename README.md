@@ -15,5 +15,10 @@ Etape 2 : Découpez la maquette
 - J'ai écris des commentaires sur le fichier index.html et style.css.
 
 Etape 3 : Intégrer le header du projet
+- J'ai intégré le logo en haut a gauche de la barre de l'en-tête.
+- J'ai intégré 2 éléments à l'intérieur de la liste de navigation avec une bordure qui change de couleur au survol.
+
+Etape 4 : Ajouter le formulaire de recherche
+- 
 
   
