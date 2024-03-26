@@ -37,7 +37,7 @@ header {
 
 /* Styling spécifique pour l'élément avec l'ID "logo" à l'intérieur de l'élément <header> */
 header #logo {
-    padding: 5px 0px; /* Ajout de rembourrage autour du logo */
+    padding: 3px 0px; /* Ajout de rembourrage autour du logo */
 }
 
 /* Styling spécifique pour les images à l'intérieur de l'élément avec l'ID "logo" */
