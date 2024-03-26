@@ -1,128 +1,189 @@
 /****** General ***********/
+
+/* Appliquer la police 'Raleway' à tous les éléments de la page */
 * {
     font-family: 'Raleway', sans-serif;
 }
 
+/* Définition des variables de couleur principale, de couleur de fond principale et de couleur de fond pour les filtres */
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
 
+/* Appliquer la couleur principale définie par la variable aux icônes solid de Font Awesome */
 .fa-solid {
     color: var(--main-color);
 }
 
+/* Centrer le contenu de la page horizontalement */
 body {
     display: flex;
     justify-content: center;
 }
 
+
+
+
+/* Entête du site contenant le logo et le menu de navigation */
+
+
+header {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    justify-content: space-between; /* Répartition égale de l'espace disponible entre les éléments enfants */
+    padding: 1px; /* Ajout d'un léger espacement intérieur */
+}
+
+/* Styling spécifique pour l'élément avec l'ID "logo" à l'intérieur de l'élément <header> */
+header #logo {
+    padding: 5px 0px; /* Ajout de rembourrage autour du logo */
+}
+
+/* Styling spécifique pour les images à l'intérieur de l'élément avec l'ID "logo" */
+header #logo img {
+    width: 100px; /* Définition de la largeur de l'image du logo */
+}
+
+/* Styling spécifique pour les listes non ordonnées à l'intérieur de l'élément <nav> dans <header> */
+header nav ul {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments de la liste horizontalement */
+    list-style-type: none; /* Suppression des puces de la liste */
+    margin: 0; /* Suppression des marges par défaut de la liste */
+}
+
+/* Styling spécifique pour chaque élément de liste dans le menu de navigation */
+header nav ul li {
+    padding: 10px 20px; /* Ajout de rembourrage à chaque élément de liste */
+    border-top: 4px solid transparent; /* Ajout d'une bordure supérieure transparente */
+    margin: 0px 10px 0px 10px; /* Définition des marges autour de chaque élément de liste */
+}
+
+/* Styling au survol de chaque élément de liste dans le menu de navigation */
+header nav ul li:hover {
+    border-color: var(--main-color); /* Changement de la couleur de la bordure supérieure au survol */
+}
+
+/* Styling spécifique pour les liens à l'intérieur des éléments de liste du menu de navigation */
+header nav ul li a {
+    color: black; /* Définition de la couleur du texte des liens */
+    text-decoration: none; /* Suppression du soulignement des liens */
+}
+
+/* Styling au survol des liens à l'intérieur des éléments de liste du menu de navigation */
+header nav ul li:hover a {
+    color: var(--main-color); /* Changement de la couleur du texte des liens au survol */
+}
+
+
+
+
+
+
+
+
 .main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
+    width: 100%; /* Largeur totale */
+    max-width: 1440px; /* Largeur maximale */
+    padding: 0 50px; /* Espacement intérieur de 50px sur les côtés */
+    box-sizing: border-box; /* Inclure les bordures et le rembourrage dans le calcul de la taille */
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+    color: inherit; /* Couleur du texte héritée */
+    text-decoration: none; /* Pas de soulignement */
 }
 
 .section-title {
-    margin: 0;
-    font-size: 22px;
+    margin: 0; /* Supprimer les marges par défaut */
+    font-size: 22px; /* Taille de police */
 }
 
 .card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    background-color: white; /* Couleur de fond */
+    border-radius: 20px; /* Bordure arrondie */
+    padding: 5px; /* Rembourrage intérieur */
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); /* Ombre portée */
 }
 
 .card img {
-    object-fit: cover;
+    object-fit: cover; /* Adapter l'image à la taille de la carte */
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 16px; /* Taille de police */
 }
 
 .euro {
-    font-weight: 700;
+    font-weight: 700; /* Graisse de police */
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color) /* Couleur neutre pour l'étoile */
 }
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Afficher en ligne */
+    justify-content: space-between; /* Espace égal entre les éléments */
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
+    background-color: var(--main-bg-color); /* Couleur de fond */
+    border-radius: 20px; /* Bordure arrondie */
+    padding: 30px; /* Rembourrage intérieur */
+    box-sizing: border-box; /* Inclure les bordures et le rembourrage dans le calcul de la taille */
 }
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 65%; /* Largeur */
 }
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 32%; /* Largeur */
 }
 
 .populaires-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Afficher en ligne */
+    justify-content: space-between; /* Espace égal entre les éléments */
+    align-items: center; /* Aligner verticalement au centre */
 }
 
 .populaires-cards .card {
-    display: flex;
-    margin-top: 33px;
+    display: flex; /* Afficher en ligne */
+    margin-top: 33px; /* Marge supérieure */
 }
 
 .populaires-cards img {
-    width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    width: 33%; /* Largeur */
+    height: 136px; /* Hauteur */
+    border-top-left-radius: 20px; /* Bordure arrondie */
+    border-bottom-left-radius: 20px; /* Bordure arrondie */
 }
 
 .populaires-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+    width: 67%; /* Largeur */
+    padding-left: 15px; /* Rembourrage à gauche */
+    display: flex; /* Afficher en ligne */
+    flex-direction: column; /* Aligner en colonne */
+    justify-content: space-between; /* Espace égal entre les éléments */
+    box-sizing: border-box; /* Inclure les bordures et le rembourrage dans le calcul de la taille */
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin-top: 10px; /* Marge supérieure */
+    margin-bottom: 4px; /* Marge inférieure */
 }
 
 .populaires-cards .card-subtitle {
-    margin: 0;
+    margin: 0; /* Supprimer les marges par défaut */
 }
 
 .populaires-cards .card-rating {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Marge inférieure */
 }
-
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -130,34 +191,34 @@ a {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
-        flex-direction: column;
+        flex-direction: column; /* Afficher en colonne */
     }
 
     .hebergements {
-        width: 100%;
+        width: 100%; /* Largeur totale */
     }
 
     .populaires {
-        width: 100%;
-        margin-top: 50px;
+        width: 100%; /* Largeur totale */
+        margin-top: 50px; /* Marge supérieure */
     }
 
     .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        display: flex; /* Afficher en ligne */
+        flex-direction: row; /* Afficher en ligne */
+        justify-content: space-between; /* Espace égal entre les éléments */
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 30%; /* Largeur */
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        font-size: 14px; /* Taille de police */
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 13px; /* Taille de police */
     }
 }
 
@@ -165,4 +226,3 @@ a {
 @media (max-width: 767.98px) {
     /* ... */
 }
-
