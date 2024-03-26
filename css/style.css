@@ -112,10 +112,10 @@ header nav ul li:hover a {
 .aspect_filtres {
     border: 3px solid #F2F2F2; /* Bordure solide de 3 pixels avec la couleur spécifiée */
     border-radius: 30px; /* Rayon de bordure pour arrondir les coins */
-    margin-left: 40px; /* Décalage de 40 pixels à gauche */
+    margin-left: 50px; /* Décalage de 40 pixels à gauche */
     padding: 11px; /* Remplissage intérieur */
     padding-right: 15px; /* Remplissage à droite */
-    padding-left: 35px; /* Remplissage à gauche */
+    padding-left: 60px; /* Remplissage à gauche */
     position: relative; /* Position relative pour permettre un positionnement relatif des enfants absolus */
 }
 
@@ -132,10 +132,10 @@ header nav ul li:hover a {
     width: 17px; /* Largeur */
     height: 17px; /* Hauteur */
     font-size: 20px; /* Taille de police */
-    color: #0065FC; /* Couleur du texte */
-    background-color: #DEEBFF; /* Couleur de fond */
+    
+  
     border-radius: 50%; /* Rayon de bordure pour créer un cercle */
-    padding: 14px; /* Remplissage intérieur */
+    padding: 13px; /* Remplissage intérieur */
     position: absolute; /* Position absolue */
     left: 0; /* Position à gauche */
     top: 50%; /* Position au centre verticalement */
