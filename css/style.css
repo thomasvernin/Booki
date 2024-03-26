@@ -86,6 +86,13 @@ header nav ul li:hover a {
 #filtres_info {
     padding-left: 46px; /* Décalage de 46 pixels à gauche */
     padding-top: 30px; /* Décalage de 30 pixels en haut */
+    font-weight: bold !important ; /* Mise en gras du texte */
+}
+
+/* Réglages pour le texte dans les outils (utilisez votre propre classe ici) */
+.texte-outil {
+    font-weight: bold; /* Mise en gras du texte */
+}
 }
 
 /* Réglages pour le titre des filtres */
@@ -117,6 +124,7 @@ header nav ul li:hover a {
     padding-right: 15px; /* Remplissage à droite */
     padding-left: 60px; /* Remplissage à gauche */
     position: relative; /* Position relative pour permettre un positionnement relatif des enfants absolus */
+    font-weight: bold !important; /* Mise en gras du texte */
 }
 
 /* Effets de survol, focus et activé pour les filtres */
