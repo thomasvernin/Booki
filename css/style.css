@@ -37,12 +37,12 @@ header {
 
 /* Styling spécifique pour l'élément avec l'ID "logo" à l'intérieur de l'élément <header> */
 header #logo {
-    padding: 3px 0px; /* Ajout de rembourrage autour du logo */
+    padding: 20px 0px; /* Ajout de rembourrage autour du logo */
 }
 
 /* Styling spécifique pour les images à l'intérieur de l'élément avec l'ID "logo" */
 header #logo img {
-    width: 100px; /* Définition de la largeur de l'image du logo */
+    width: 80px; /* Définition de la largeur de l'image du logo */
 }
 
 /* Styling spécifique pour les listes non ordonnées à l'intérieur de l'élément <nav> dans <header> */
@@ -54,7 +54,7 @@ header nav ul {
 
 /* Styling spécifique pour chaque élément de liste dans le menu de navigation */
 header nav ul li {
-    padding: 10px 20px; /* Ajout de rembourrage à chaque élément de liste */
+    padding: 5px 20px; /* Ajout de rembourrage à chaque élément de liste */
     border-top: 4px solid transparent; /* Ajout d'une bordure supérieure transparente */
     margin-left: 60px; /* Définition de la marge à gauche pour décaler les éléments de liste */
 }
@@ -80,6 +80,126 @@ header nav ul li:hover a {
 
 
 
+/* Partie filtres et info */
+
+/* Réglages pour le conteneur des filtres */
+#filtres_info {
+    padding-left: 46px; /* Décalage de 46 pixels à gauche */
+    padding-top: 30px; /* Décalage de 30 pixels en haut */
+}
+
+/* Réglages pour le titre des filtres */
+#titre_filtres {
+    padding-top: 13px; /* Décalage de 13 pixels en haut */
+}
+
+/* Réglages pour le conteneur principal des filtres */
+#filtres {
+    display: flex; /* Utilisation du modèle de boîte flexible pour les éléments enfants */
+    flex-wrap: wrap; /* Permet le retour à la ligne des éléments flexibles */
+    font-weight: bold; /* Police en gras */
+    font-size: 18px; /* Taille de police */
+    column-gap: 20px; /* Espacement entre les colonnes */
+}
+
+/* Réglages pour le conteneur des catégories de filtres */
+#filtres_categories {
+    display: flex; /* Utilisation du modèle de boîte flexible pour les éléments enfants */
+    margin-left: -33px; /* Décalage de -33 pixels à gauche */
+}
+
+/* Réglages pour les éléments individuels des filtres */
+.aspect_filtres {
+    border: 3px solid #F2F2F2; /* Bordure solide de 3 pixels avec la couleur spécifiée */
+    border-radius: 30px; /* Rayon de bordure pour arrondir les coins */
+    margin-left: 40px; /* Décalage de 40 pixels à gauche */
+    padding: 11px; /* Remplissage intérieur */
+    padding-right: 15px; /* Remplissage à droite */
+    padding-left: 35px; /* Remplissage à gauche */
+    position: relative; /* Position relative pour permettre un positionnement relatif des enfants absolus */
+}
+
+/* Effets de survol, focus et activé pour les filtres */
+.aspect_filtres:hover,
+.aspect_filtres:focus,
+.aspect_filtres:active {
+    color: #0065FC; /* Changement de couleur du texte */
+    cursor: pointer; /* Curseur de pointeur */
+}
+
+/* Réglages pour les icônes des filtres */
+.icone_filtres {
+    width: 17px; /* Largeur */
+    height: 17px; /* Hauteur */
+    font-size: 20px; /* Taille de police */
+    color: #0065FC; /* Couleur du texte */
+    background-color: #DEEBFF; /* Couleur de fond */
+    border-radius: 50%; /* Rayon de bordure pour créer un cercle */
+    padding: 14px; /* Remplissage intérieur */
+    position: absolute; /* Position absolue */
+    left: 0; /* Position à gauche */
+    top: 50%; /* Position au centre verticalement */
+    transform: translateY(-50%); /* Ajustement pour centrer verticalement */
+}
+
+/* Réglages spécifiques pour certaines icônes */
+.fa-money-bill-wave {
+    padding-left: 13px; /* Décalage à gauche */
+}
+
+.fa-child-reaching {
+    padding-left: 17px; /* Décalage à gauche */
+}
+
+/* Réglages pour les paragraphes dans le conteneur des filtres */
+#filtres p {
+    padding-left: 10px; /* Décalage à gauche */
+}
+
+
+
+
+
+/* Partie info */
+
+/* Réglages pour l'icône d'information */
+.fa-info {
+    color: #0065FC; /* Couleur du texte */
+    border: 3px solid #F2F2F2; /* Bordure solide avec la couleur spécifiée */
+    border-radius: 50%; /* Rayon de bordure pour créer un cercle */
+    font-size: 12px; /* Taille de police */
+    padding-top: 2px; /* Décalage en haut */
+    padding-left: 8px; /* Décalage à gauche */
+    padding-right: 8px; /* Décalage à droite */
+    margin-right: 8px; /* Marge à droite */
+    width: 25px; /* Largeur */
+    height: 25px; /* Hauteur */
+}
+
+/* Réglages pour le conteneur d'informations */
+#info {
+    display: flex; /* Utilisation du modèle de boîte flexible pour les éléments enfants */
+    margin-top: 40px; /* Marge en haut */
+    margin-bottom: 40px; /* Marge en bas */
+    font-weight: 500; /* Poids de la police */
+}
+
+/* Réglages pour le texte d'information */
+#texte_info {
+    padding-top: 4px; /* Décalage en haut */
+    padding-left: 3px; /* Décalage à gauche */
+    font-size: 16px; /* Taille de police */
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .main-container {
@@ -98,7 +218,7 @@ header nav ul li:hover a {
 h1, p {
     font-size: 22px;
     margin: 0;
-    margin-left: -47px; /* Vous pouvez ajuster la valeur selon vos besoins */
+    margin-left: 0px; /* Vous pouvez ajuster la valeur selon vos besoins */
 }
 
 h1 {
@@ -113,7 +233,7 @@ p {
 
 
 #recherche{
-    padding-left: 46px;
+    padding-left: 0px;
     padding-top: 30px;
 }
 #recherche p{
