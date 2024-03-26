@@ -154,22 +154,20 @@ input:-webkit-autofill:focus {
     opacity: 1; /* Opacité totale */
 }
 
-/* Style pour le bouton de recherche sur ordinateur et tablette */
-.bouton_rechercher_desktop_tablette {
-    background-color: #0065FC; /* Couleur de fond */
-    color: white; /* Couleur du texte */
-    width: 133px; /* Largeur */
-    border: 0px solid #F2F2F2; /* Bordure solide */
-    border-radius: 0px 18px 18px 0px; /* Bordures arrondies */
-    padding: 15px; /* Remplissage intérieur */
-    font-weight: bold; /* Gras */
-    font-size: 17px; /* Taille de police */
+ /* Mise en forme du bouton rechercher sur ordinateur et tablette */
+ .bouton_rechercher_desktop_tablette {
+    background-color: #0065FC;
+    color: white;
+    width: 133px;
+    border: 0px solid #F2F2F2;
+    border-radius: 0px 18px 18px 0px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 17px;
 }
-
-/* Style pour le survol, le focus et l'activation du bouton de recherche sur ordinateur et tablette */
 .bouton_rechercher_desktop_tablette:hover, .bouton_rechercher_desktop_tablette:focus, .bouton_rechercher_desktop_tablette:active{
-    border: 1px solid #DEEBFF; /* Bordure solide */
-    cursor: pointer; /* Curseur pointer */
+    border: 1px solid #DEEBFF;
+    cursor: pointer;
 }
 
 /* Style pour l'icône de la barre de recherche */
@@ -181,6 +179,11 @@ input:-webkit-autofill:focus {
     padding-left: 18px; /* Espacement à gauche */
     border-radius: 18px 0px 0px 18px; /* Bordures arrondies */
 }
+
+
+
+
+
 
 
 
@@ -324,3 +327,7 @@ a {
 @media (max-width: 767.98px) {
     /* ... */
 }
+
+   
+
+
