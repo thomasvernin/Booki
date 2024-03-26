@@ -138,8 +138,8 @@ header nav ul li:hover a {
 /* Réglages pour les icônes des filtres */
 .icone_filtres {
     width: 17px; /* Largeur */
-    height: 17px; /* Hauteur */
-    font-size: 20px; /* Taille de police */
+    height: 24px; /* Hauteur */
+    font-size: 25px; /* Taille de police */
     
   
     border-radius: 50%; /* Rayon de bordure pour créer un cercle */
