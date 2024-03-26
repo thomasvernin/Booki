@@ -56,7 +56,7 @@ header nav ul {
 header nav ul li {
     padding: 10px 20px; /* Ajout de rembourrage à chaque élément de liste */
     border-top: 4px solid transparent; /* Ajout d'une bordure supérieure transparente */
-    margin: 0px 10px 0px 10px; /* Définition des marges autour de chaque élément de liste */
+    margin-left: 60px; /* Définition de la marge à gauche pour décaler les éléments de liste */
 }
 
 /* Styling au survol de chaque élément de liste dans le menu de navigation */
