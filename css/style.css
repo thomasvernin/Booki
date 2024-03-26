@@ -95,11 +95,23 @@ header nav ul li:hover a {
 
 
 /* Partie Recherche */
-h1{
+h1, p {
     font-size: 22px;
-    font-weight: bold;
     margin: 0;
+    margin-left: -47px; /* Vous pouvez ajuster la valeur selon vos besoins */
 }
+
+h1 {
+    font-weight: bold;
+}
+
+p {
+    font-weight: normal; /* Pour annuler le gras */
+    font-size: 16px; /* Taille de police spécifique pour p */
+}
+
+
+
 #recherche{
     padding-left: 46px;
     padding-top: 30px;
