@@ -95,67 +95,52 @@ header nav ul li:hover a {
 
 
 /* Partie Recherche */
-
-/* Style pour les titres de niveau 1 */
 h1{
-    font-size: 22px; /* Taille de police */
-    font-weight: bold; /* Gras */
-    margin: 0; /* Aucune marge */
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
 }
-
-/* Style pour l'élément avec l'id "recherche" */
 #recherche{
-    padding-left: 46px; /* Espacement à gauche */
-    padding-top: 30px; /* Espacement en haut */
+    padding-left: 46px;
+    padding-top: 30px;
 }
-
-/* Style pour les paragraphes à l'intérieur de l'élément avec l'id "recherche" */
 #recherche p{
-    padding-top: 10px; /* Espacement en haut */
-    padding-bottom: 20px; /* Espacement en bas */
-    font-weight: 500; /* Épaisseur de la police entre normal et gras */
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: 500; /*pour mettre la police entre normal et gras */
 }
-
-/* Style pour les formulaires */
 form {
-    display: flex; /* Affichage en mode flexbox */
-    margin-top: 0; /* Aucune marge en haut */
+    display: flex;
+    margin-top: 0;
 }
-
-/* Style pour les champs de saisie */
 input {
-    padding: 15px; /* Remplissage intérieur */
-    width: 235px; /* Largeur */
-    border: 1px solid #F2F2F2; /* Bordure solide */
-    color: #000000; /* Couleur du texte */
-    font-weight: bold; /* Gras */
-    font-size: 18px; /* Taille de police */
-    outline: none; /* Pas de contour */
+    padding: 15px;
+    width: 235px;
+    border: 1px solid #F2F2F2;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    outline: none; /* Pour supprimer le contour */
 }
-
-/* Style pour le champ de saisie de type texte lorsqu'il est en focus */
 input[type=text]:focus {
-    border: 1px solid #F2F2F2; /* Bordure solide */
+    border: 1px solid #F2F2F2;
 }
-
-/* Modification de la couleur de fond de l'autocomplétion pour certains navigateurs */
+/* Modifie la couleur de fond de l'autocomplétion */
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus {
-    box-shadow: 0 0 0px 1000px white inset; /* Ombre pour couvrir la couleur de fond */
-    -webkit-box-shadow: 0 0 0px 1000px white inset; /* Pour les navigateurs WebKit */
+    box-shadow: 0 0 0px 1000px white inset;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
-
-/* Modification du style du texte de l'attribut placeholder */
+/* Modification de la police dans le champs de recherche */
 ::placeholder {
-    color: black; /* Couleur du texte */
-    font-weight: bold; /* Gras */
-    font-size: 18px; /* Taille de police */
-    opacity: 1; /* Opacité totale */
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 1; /* pour foncer la couleur de la police dans firefox */
 }
-
- /* Mise en forme du bouton rechercher sur ordinateur et tablette */
- .bouton_rechercher_desktop_tablette {
+/* Mise en forme du bouton rechercher sur ordinateur et tablette */
+.bouton_rechercher_desktop_tablette {
     background-color: #0065FC;
     color: white;
     width: 133px;
@@ -169,18 +154,15 @@ input:-webkit-autofill:focus {
     border: 1px solid #DEEBFF;
     cursor: pointer;
 }
-
-/* Style pour l'icône de la barre de recherche */
+/* Icône barre de recherche */
 .fa-location-dot {
-    font-size: 17px; /* Taille de police de l'icône "localisation" */
-    border: 2px solid #F2F2F2; /* Bordure solide */
-    background-color: #F2F2F2; /* Couleur de fond */
-    padding: 15px; /* Remplissage intérieur */
-    padding-left: 18px; /* Espacement à gauche */
-    border-radius: 18px 0px 0px 18px; /* Bordures arrondies */
+    font-size: 17px; /* Dimensionnement de l'icône "localisation" */
+    border: 2px solid #F2F2F2;
+    background-color: #F2F2F2;
+    padding: 15px;
+    padding-left: 18px;
+    border-radius: 18px 0px 0px 18px;
 }
-
-
 
 
 
