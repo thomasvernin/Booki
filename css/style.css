@@ -97,15 +97,20 @@ header nav ul li:hover a {
 
 /* Réglages pour le titre des filtres */
 #titre_filtres {
-    padding-top: 13px; /* Décalage de 13 pixels en haut */
+    
 }
+
+
+
+    
+
 
 /* Réglages pour le conteneur principal des filtres */
 #filtres {
     display: flex; /* Utilisation du modèle de boîte flexible pour les éléments enfants */
     flex-wrap: wrap; /* Permet le retour à la ligne des éléments flexibles */
     font-weight: bold; /* Police en gras */
-    font-size: 18px; /* Taille de police */
+    font-size: 30px; /* Taille de police */
     column-gap: 20px; /* Espacement entre les colonnes */
 }
 
@@ -449,6 +454,10 @@ a {
 @media (max-width: 767.98px) {
     /* ... */
 }
+
+   
+
+
 
    
 
