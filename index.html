@@ -27,15 +27,23 @@
                 </ul>
             </nav>
         </header>
-            <div class="search-box">
-                <i class="fas fa-map-marker-alt"></i>
-                    <input type="text" placeholder="Marseille, France">
-                        <button>
-                            <span>Rechercher</span>
-                <i class="fas fa-search"></i>
-                        </button>
-        </div>
+            
         <main> <!-- Contenu principal de la page -->
+            <!--Partie Recherche-->
+            <section id="recherche">
+                <div id="identite_du_site">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </div>
+                <div id="zone_recherche">
+                    <form method="post" action="#" id="formulaire">
+                        <i class="fa-solid fa-location-dot"></i> 
+                        <input type="text" name="localisation" placeholder="Marseille, France" />
+                        <button type="button" class="bouton_rechercher_desktop_tablette">Rechercher</button>
+                        <button type="button" class="bouton_rechercher_mobile"><i class="fa-solid fa-magnifying-glass loupe"></i></button>
+                    </form>
+                </div>
+            </section>
             <div class="hebergements-and-populaires"> <!-- Conteneur pour les sections "hébergements" et "populaires" -->
                 <section class="hebergements"> <!-- Section pour les hébergements -->
 
