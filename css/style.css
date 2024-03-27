@@ -19,7 +19,7 @@ Supprime les puces ou les numéros de liste pour tous les éléments de liste.  
   /*- Propriétés personnalisées -*/
   
   :root {
-    --main-color: #0065FC; /* Définit une variable '--main-blue' pour stocker la couleur bleue principale */
+    --main-color: #0065FC; /* Définit une variable '--main-color' pour stocker la couleur bleue principale */
     --light-blue: #deebff;
     --grey: #d9d9d9;
     --main-bg-color: #f2f2f2;
@@ -29,79 +29,86 @@ Supprime les puces ou les numéros de liste pour tous les éléments de liste.  
   
   
   
-  /*- HEADER -*/
+  /****************************************- HEADER -***************************************/
   
-  
+  /*Style du haut de la page (header) avec une marge de 0 pixels en 
+  haut, 55 pixels à droite, 37 pixels en bas, et 55 pixels à gauche.*/
+
   header {
     margin: 0px 55px 37px 55px;
   }
   
   
   
-  /*-  Navbar -*/
+  /***************************************-  Navbar -***************************************/
   
   nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    flex-direction: row; /* Les éléments sont disposés horizontalement */
+    justify-content: space-between; /* Espace égal entre les éléments */
+}
+
+.nav__logo {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments verticalement */
+    align-items: center; /* Les éléments sont centrés verticalement */
+}
+
+.nav__logo img {
+    width: 61.09px; /* Largeur spécifique pour l'image */
+    height: 19px; /* Hauteur spécifique pour l'image */
+}
+
+nav ul {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    align-items: end; /* Alignement des éléments en bas */
+    flex-direction: row; /* Les éléments sont disposés horizontalement */
+    height: 100px; /* Hauteur spécifique pour la liste non ordonnée */
+}
+
+nav li {
+    position: relative; /* Position relative pour permettre le positionnement absolu des pseudo-éléments */
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    justify-content: center; /* Les éléments sont centrés horizontalement */
+    align-items: center; /* Les éléments sont centrés verticalement */
+    width: 150px; /* Largeur spécifique pour chaque élément de liste */
+    height: 100%; /* Hauteur égale à 100% */
+    text-align: center; /* Le texte est centré horizontalement */
+}
+
+nav li a {
+    text-decoration: none; /* Pas de soulignement pour les liens */
+    font: 400 16px "Raleway", sans-serif; /* Police et taille spécifiques pour les liens */
+    color: var(--black); /* Couleur de texte spécifique */
+}
+
+nav li a:hover {
+    cursor: pointer; /* Curseur de la souris devient pointer au survol */
+    color: var(--main-color); /* Changement de couleur au survol */
+}
+
+nav li a:hover::before {
+    content: ""; /* Contenu vide pour le pseudo-élément */
+    width: 0%; /* Largeur initiale de la barre de progression */
+    height: 2px; /* Hauteur de la barre de progression */
+    position: absolute; /* Position absolue par rapport à son conteneur */
+    top: 0; /* Positionnement en haut */
+    left: 0; /* Positionnement à gauche */
+}
+
+nav li a:hover::before {
+    background-color: var(--main-color); /* Couleur de la barre de progression */
+    width: 100%; /* La barre de progression s'étend à 100% au survol */
+}
+
   
-  .nav__logo {
-    display: flex;
-    align-items: center;
-  }
   
-  .nav__logo img {
-    width: 61.09px;
-    height: 19px;
-  }
+
+
+
+
   
-  nav ul {
-    display: flex;
-    align-items: end;
-    flex-direction: row;
-    height: 100px;
-  }
-  
-  nav li {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    text-align: center;
-  }
-  
-  nav li a {
-    text-decoration: none;
-    font: 400 16px "Raleway", sans-serif; 
-    color: var(--black);
-  }
-  
-  nav li a:hover {
-    cursor: pointer;
-    color: var(--main-color);
-  }
-  
-  
-  nav li a:hover::before {
-    content: "";
-    width: 0%;
-    height: 2px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  nav li a:hover::before {
-    background-color: var(--main-color);
-    width: 100%;
-  }
-  
-  
-  
-  /*  Barre de recherche  */
+  /************************************** Barre de recherche  *******************************************/
+
   
   /* Définition du style pour le titre dans la barre de recherche */
   .search-bar__titles h1 {
@@ -191,7 +198,11 @@ Supprime les puces ou les numéros de liste pour tous les éléments de liste.  
   }
   
   
-  /*- Filter bar -*/
+
+
+
+  /****************************************- Filter bar -*****************************************/
+
   
   .filter-bar {
     display: flex;
@@ -225,8 +236,9 @@ Supprime les puces ou les numéros de liste pour tous les éléments de liste.  
   }
   
   .filter-bar__btn:active {
-    transform: translateY(2px);
-  }
+    transform: translateY(2px); /* Décale le bouton vers le bas de 2 pixels lorsqu'il est activé */
+}
+
   
   .filter-bar i {
     color: var(--main-color);
@@ -235,345 +247,343 @@ Supprime les puces ou les numéros de liste pour tous les éléments de liste.  
   }
   
   .filter-bar__btn:hover {
-    background-color: var(--light-blue);
-    cursor: pointer;
-  }
+    background-color: var(--light-blue); /* Change la couleur de fond au survol en utilisant la variable --light-blue */
+    cursor: pointer; /* Change le curseur de la souris en une main au survol */
+}
+
   
   
   
   
-  /*- Info bar -*/
+  /**************************************- Info bar -*****************************************/
   
-  .info-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 5px;
-  }
-  
-  .info-bar p {
-    font:  400 16px "Raleway", sans-serif;
-  }
-  
-  .info-bar__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-    border-radius: 1000px;
-    border: 1px solid var(--grey);
-    margin-right: 11px;
-  }
-  
-  #info-bar__icon {
-    font-size: 11.75px;
-    color: var(--main-color);
-    text-align: center;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  .offers {
-    margin: 0 50px 60px 50px;
-    display: flex;
-  }
-  
-  .offers h2 {
-    font:  700 22px "Raleway", sans-serif;
-  }
+.info-bar {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    flex-direction: row; /* Les éléments sont disposés horizontalement */
+    align-items: center; /* Les éléments sont centrés verticalement */
+    margin-left: 5px; /* Marge à gauche de 5 pixels */
+}
+
+.info-bar p {
+    font: 400 16px "Raleway", sans-serif; /* Police et taille spécifiques pour les paragraphes */
+}
+
+.info-bar__container {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    justify-content: center; /* Les éléments sont centrés horizontalement */
+    align-items: center; /* Les éléments sont centrés verticalement */
+    width: 24px; /* Largeur spécifique */
+    height: 24px; /* Hauteur spécifique */
+    border-radius: 1000px; /* Bordure arrondie */
+    border: 1px solid var(--grey); /* Bordure de couleur spécifique */
+    margin-right: 11px; /* Marge à droite de 11 pixels */
+}
+
+#info-bar__icon {
+    font-size: 11.75px; /* Taille de police spécifique pour l'icône */
+    color: var(--main-color); /* Couleur spécifique pour l'icône */
+    text-align: center; /* Le texte est centré horizontalement */
+}
+
+.offers {
+    margin: 0 50px 60px 50px; /* Marge extérieure spécifique */
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+}
+
+.offers h2 {
+    font: 700 22px "Raleway", sans-serif; /* Police et taille spécifiques pour les titres */
+}
+
   
   
   
   
   
   
-  /*- Hébergements à Marseille -*/
+  /***********************************- Hébergements à Marseille -*****************************************/
   
   
   .offers__main {
-    width: calc(
-      (2 * (100% - 40px)) / 3
-    ); /* Deux tiers de l'espace total moins 40px d'espacement */
-    padding: 34px 44px 46px 36px;
-    background-color: var(--main-bg-color);
-      border-radius: 20px;
-      padding: 30px;
-      box-sizing: border-box;
-  
-  
-  }
-  
-  .offers__main h2 {
-    margin-bottom: 23px;
-  }
-  
-  .card__main {
-    width: calc(100% / 3);
-    border: 5px solid #ffffff;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out; /* Ajouter une transition pour un effet plus doux */
-  }
-  
-  .card__main a {
-    color: var(--black);
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .card__main img {
-    width: 100%;
-    border-radius: 20px 20px 0px 0px;
-    height: 124px;
-    object-fit: cover;
-  }
-  .card__main h3 {
-    font:  700 16px "Raleway", sans-serif;
-  }
-  .card__main p {
-    font:  400 14px "Raleway", sans-serif;
-  }
-  
-  .stars__container--main i {
-    color: var(--main-color);
-    margin: -2px;
-    font-size: 14px;
-  }
-  
-  .card__description--main {
-    padding: 4px 0 6px 11px;
-  }
-  
-  .card__description--main > h3,
-  .card__description--main > p {
-    margin-bottom: 9px;
-  }
-  
-  .card__main:hover {
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  .card__main:active {
-    transform: translateY(2px); /* Déplacer la carte de 2 pixels vers le bas */
-  }
-  
-  .show-more__btn {
-    font:  700 18px "Raleway", sans-serif;;
-    margin-top: 40px;
-    margin-left: 4px;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .show-more__btn:hover {
-    color: var(--main-color);
-    background-color: white;
-  }
-  
-  .first-row,
-  .second-row {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .first-row {
-    margin-bottom: 30px;
-  }
-  
-  .card__main:nth-child(n + 1):nth-child(-n + 2) {
-    margin-right: 31px;
-  
-  
-  
-  
-  }
-  /*- Les plus populaires -*/
+    width: calc((2 * (100% - 40px)) / 3); /* Deux tiers de l'espace total moins 40px d'espacement */
+    padding: 34px 44px 46px 36px; /* Rembourrage spécifique */
+    background-color: var(--main-bg-color); /* Couleur de fond spécifique */
+    border-radius: 20px; /* Bordure arrondie */
+    padding: 30px; /* Rembourrage spécifique */
+    box-sizing: border-box; /* Inclure le rembourrage dans le calcul de la largeur */
+}
+
+.offers__main h2 {
+    margin-bottom: 23px; /* Marge inférieure spécifique */
+}
+
+.card__main {
+    width: calc(100% / 3); /* Largeur égale à un tiers de l'espace total */
+    border: 5px solid #ffffff; /* Bordure de 5 pixels solide blanche */
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); /* Ombre de boîte avec des paramètres spécifiques */
+    border-radius: 20px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur de la souris devient pointer */
+    transition: all 0.2s ease-in-out; /* Ajout d'une transition pour un effet plus doux */
+}
+
+.card__main a {
+    color: var(--black); /* Couleur de texte spécifique */
+    text-decoration: none; /* Pas de soulignement pour les liens */
+    cursor: pointer; /* Curseur de la souris devient pointer */
+}
+
+.card__main img {
+    width: 100%; /* Largeur de l'image à 100% */
+    border-radius: 20px 20px 0px 0px; /* Coins arrondis spécifiques */
+    height: 124px; /* Hauteur spécifique */
+    object-fit: cover; /* Ajustement de l'objet pour couvrir */
+}
+
+.card__main h3 {
+    font: 700 16px "Raleway", sans-serif; /* Police et taille spécifiques pour les titres */
+}
+
+.card__main p {
+    font: 400 14px "Raleway", sans-serif; /* Police et taille spécifiques pour les paragraphes */
+}
+
+.stars__container--main i {
+    color: var(--main-color); /* Couleur d'étoile spécifique */
+    margin: -2px; /* Marge spécifique */
+    font-size: 14px; /* Taille de police spécifique */
+}
+
+.card__description--main {
+    padding: 4px 0 6px 11px; /* Rembourrage spécifique */
+}
+
+.card__description--main > h3,
+.card__description--main > p {
+    margin-bottom: 9px; /* Marge inférieure spécifique */
+}
+
+.card__main:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3); /* Ombre de boîte au survol */
+}
+
+.card__main:active {
+    transform: translateY(2px); /* Déplacer la carte de 2 pixels vers le bas lorsqu'elle est activée */
+}
+
+.show-more__btn {
+    font: 700 18px "Raleway", sans-serif; /* Police et taille spécifiques pour le bouton */
+    margin-top: 40px; /* Marge supérieure spécifique */
+    margin-left: 4px; /* Marge à gauche spécifique */
+    padding: 0; /* Pas de rembourrage */
+    border: none; /* Pas de bordure */
+    cursor: pointer; /* Curseur de la souris devient pointer */
+}
+
+.show-more__btn:hover {
+    color: var(--main-color); /* Couleur de texte au survol spécifique */
+    background-color: white; /* Couleur de fond au survol spécifique */
+}
+
+.first-row,
+.second-row {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    flex-direction: row; /* Les éléments sont disposés horizontalement */
+}
+
+.first-row {
+    margin-bottom: 30px; /* Marge inférieure spécifique */
+}
+
+.card__main:nth-child(n + 1):nth-child(-n + 2) {
+    margin-right: 31px; /* Marge à droite spécifique pour les deux premières cartes */
+}
+
+
+
+
+
+
+  /***********************************- Les plus populaires -***************************************/
   
   .offers__spensored {
-    width: calc(
-      (100% - 40px) / 3
-    ); /* Un tiers de l'espace total moins 40px d'espacement */
-    margin-left: 40px;
-    padding: 41px 40px 1px 37px;
-    background-color: var(--main-bg-color);
-      border-radius: 20px;
-      padding: 30px;
-      box-sizing: border-box;
+    width: calc((100% - 40px) / 3); /* Un tiers de l'espace total moins 40px d'espacement */
+    margin-left: 40px; /* Marge à gauche spécifique */
+    padding: 41px 40px 1px 37px; /* Rembourrage spécifique */
+    background-color: var(--main-bg-color); /* Couleur de fond spécifique */
+    border-radius: 20px; /* Bordure arrondie */
+    padding: 30px; /* Rembourrage spécifique */
+    box-sizing: border-box; /* Inclure le rembourrage dans le calcul de la largeur */
+}
+
+.card__spensored--container {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments verticalement */
+    flex-direction: column; /* Les éléments sont disposés en colonne */
+}
+
+.offers__spensored h2 {
+    margin-bottom: 26px; /* Marge inférieure spécifique */
+}
+
+.offers__spensored-title {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    flex-direction: row; /* Les éléments sont disposés horizontalement */
+    justify-content: space-between; /* Espace égal entre les éléments */
+    align-items: baseline; /* Les éléments sont alignés en fonction de leur ligne de base */
+}
+
+.offers__spensored-title i {
+    color: var(--main-color); /* Couleur spécifique pour l'icône */
+    font-size: 18px; /* Taille de police spécifique */
+}
+
+.card__spensored {
+    border-radius: 20px; /* Bordure arrondie */
+    border: 5px solid #ffffff; /* Bordure de 5 pixels solide blanche */
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); /* Ombre de boîte avec des paramètres spécifiques */
+}
+
+.card__spensored:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3); /* Ombre de boîte au survol */
+}
+
+.card__spensored:active {
+    transform: translateY(2px); /* Déplacer la carte de 2 pixels vers le bas lorsqu'elle est activée */
+}
+
+.card__spensored a {
+    text-decoration: none; /* Pas de soulignement pour les liens */
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    flex-direction: row; /* Les éléments sont disposés horizontalement */
+}
+
+.card__spensored img {
+    height: 144px; /* Hauteur spécifique pour l'image */
+    width: 36%; /* Largeur spécifique pour l'image */
+    border-radius: 20px 0px 0px 20px; /* Coins arrondis spécifiques */
+    object-fit: cover; /* Ajustement de l'objet pour couvrir */
+}
+
+.card__description--spensored {
+    padding: 16px 22px 10px 15px; /* Rembourrage spécifique */
+    display: flex; /* Utilisation de flexbox pour aligner les éléments verticalement */
+    flex-direction: column; /* Les éléments sont disposés en colonne */
+    flex-wrap: wrap; /* Les éléments peuvent se répartir sur plusieurs lignes */
+    justify-content: space-between; /* Espace égal entre les éléments */
+    color: var(--black); /* Couleur de texte spécifique */
+}
+
+.card__spensored:nth-child(n + 1) {
+    margin-bottom: 33px; /* Marge inférieure spécifique */
+}
+
+.card__description--spensored h3 {
+    font: 700 16px "Raleway", sans-serif; /* Police et taille spécifiques pour les titres */
+    margin-bottom: 7px; /* Marge inférieure spécifique */
+}
+
+.card__description--spensored p {
+    font: 400 14px "Raleway", sans-serif; /* Police et taille spécifiques pour les paragraphes */
+}
+
+.stars__container--spensored i {
+    color: var(--main-color); /* Couleur d'étoile spécifique */
+    margin: -2px; /* Marge spécifique */
+    font-size: 14px; /* Taille de police spécifique */
+}
+
   
   
-  
-  }
-  
-  .card__spensored--container{
-    display: flex;
-    flex-direction: column;
-  }
-  .offers__spensored h2 {
-    margin-bottom: 26px;
-  }
-  
-  .offers__spensored-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  
-  .offers__spensored-title i {
-    color: var(--main-color);
-    font-size: 18px;
-  }
-  
-  .card__spensored {
-    border-radius: 20px;
-    border: 5px solid #ffffff;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card__spensored:hover {
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  .card__spensored:active {
-    transform: translateY(2px); /* Déplacer la carte de 2 pixels vers le bas */
-  }
-  
-  .card__spensored a {
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .card__spensored img {
-    height: 144px;
-    width: 36%;
-    border-radius: 20px 0px 0px 20px;
-    object-fit: cover;
-  }
-  
-  .card__description--spensored {
-    padding: 16px 22px 10px 15px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: var(--black);
-  }
-  
-  .card__spensored:nth-child(n + 1) {
-    margin-bottom: 33px;
-  }
-  
-  .card__description--spensored h3 {
-    font:  700 16px "Raleway", sans-serif;
-    margin-bottom: 7px;
-  }
-  
-  .card__description--spensored p {
-    font:  400 14px "Raleway", sans-serif;
-  }
-  
-  .stars__container--spensored i {
-    color: var(--main-color);
-    margin: -2px;
-    font-size: 14px;
-  }
-  
-  
-  
-  /*- ACTIVITIES SECTION -*/
+  /***************************************- ACTIVITIES SECTION -***************************************/
   
   .activities {
-    margin: 60px 53px 61px 50px;
-  }
+    margin: 60px 53px 61px 50px; /* Marge spécifique */
+}
+
+.activities h2 {
+    font: 700 22px "Raleway", sans-serif; /* Police et taille spécifiques pour les titres */
+    margin-bottom: 18.47px; /* Marge inférieure spécifique */
+}
+
+.card__activity {
+    width: 25%; /* Largeur de la carte à 25% de son conteneur */
+    border-radius: 20px; /* Bordure arrondie */
+    object-fit: cover; /* Ajustement de l'objet pour couvrir */
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); /* Ombre de boîte avec des paramètres spécifiques */
+}
+
+.card__activity:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3); /* Ombre de boîte au survol */
+    transform: translateY(2px); /* Déplacer la carte de 2 pixels vers le bas lorsqu'elle est survolée */
+}
+
+.card__activity a {
+    text-decoration: none; /* Pas de soulignement pour les liens */
+    color: var(--black); /* Couleur de texte spécifique */
+}
+
+.activities img {
+    width: 100%; /* Largeur de l'image à 100% */
+    height: 389px; /* Hauteur spécifique pour l'image */
+    border-radius: 20px 20px 0px 0px; /* Coins arrondis spécifiques */
+}
+
+.card__description--activity h3 {
+    font: 700 16px "Raleway", sans-serif; /* Police et taille spécifiques pour les titres */
+    padding: 20px 36px 21px 19px; /* Rembourrage spécifique */
+}
+
+.activities-row {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    flex-direction: row; /* Les éléments sont disposés horizontalement */
+}
+
+.card__activity:nth-child(-n + 3) {
+    margin-right: 43px; /* Marge à droite spécifique pour les trois premières cartes */
+}
+
+
+
+
+
+
+
   
-  .activities h2 {
-    font:  700 22px "Raleway", sans-serif;
-    margin-bottom: 18.47px;
-  }
+  /***********************************- FOOTER SECTION -****************************************/
+
   
-  .card__activity {
-    width: 25%;
-    border-radius: 20px;
-    object-fit: cover;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card__activity:hover {
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
-    transform: translateY(2px); /* Déplacer la carte de 2 pixels vers le bas */
-  }
-  
-  .card__activity a {
-    text-decoration: none;
-    color: var(--black);
-  }
-  
-  .activities img {
-    width: 100%;
-    height: 389px;
-    border-radius: 20px 20px 0px 0px;
-  }
-  
-  .card__description--activity h3 {
-    font:  700 16px "Raleway", sans-serif;
-    padding: 20px 36px 21px 19px;
-  }
-  
-  .activities-row {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .card__activity:nth-child(-n + 3) {
-    margin-right: 43px;
-  }
-  
-  
-  /*- FOOTER SECTION -*/
-  
-  /*- Footer -*/
-  footer {
-    display: flex;
-    padding: 45px 0px 24px 118px;
-    margin-bottom: 27px;
-    background-color: var(--main-bg-color);
-      border-radius: 0px;
-      padding: 30px;
-      box-sizing: border-box;
-  }
-  
-  
-  footer h3 {
-    font:  700 18px "Raleway", sans-serif;
-    margin-bottom: 20px;
-  }
-  
-  .footer__column:nth-child(-n + 2) {
-    width: 30%;
-  }
-  
-  .link-list li:nth-child(-n + 2) {
-    margin-bottom: 12px;
-  }
-  
-  .link-list a {
-    text-decoration: none;
-    color: var(--black);
-    font:  400 16px "Raleway", sans-serif;
-  }
-  
-  .link-list a:hover {
-    text-decoration: underline;
-  }
+ /*- Footer -*/
+footer {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    padding: 45px 0px 24px 118px; /* Rembourrage spécifique */
+    margin-bottom: 27px; /* Marge inférieure spécifique */
+    background-color: var(--main-bg-color); /* Couleur de fond spécifique */
+    border-radius: 0px; /* Bordure sans arrondi */
+    padding: 30px; /* Rembourrage spécifique */
+    box-sizing: border-box; /* Inclure le rembourrage dans le calcul de la largeur */
+}
+
+footer h3 {
+    font: 700 18px "Raleway", sans-serif; /* Police et taille spécifiques pour les titres */
+    margin-bottom: 20px; /* Marge inférieure spécifique */
+}
+
+.footer__column:nth-child(-n + 2) {
+    width: 30%; /* Largeur de la colonne spécifique pour les deux premières colonnes */
+}
+
+.link-list li:nth-child(-n + 2) {
+    margin-bottom: 12px; /* Marge inférieure spécifique pour les deux premiers éléments de liste */
+}
+
+.link-list a {
+    text-decoration: none; /* Pas de soulignement pour les liens */
+    color: var(--black); /* Couleur de texte spécifique */
+    font: 400 16px "Raleway", sans-serif; /* Police et taille spécifiques pour les liens */
+}
+
+.link-list a:hover {
+    text-decoration: underline; /* Soulignement des liens au survol */
+}
+
   
   
   
