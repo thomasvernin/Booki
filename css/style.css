@@ -46,6 +46,7 @@ Supprime les puces ou les numéros de liste pour tous les éléments de liste.  
     display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
     flex-direction: row; /* Les éléments sont disposés horizontalement */
     justify-content: space-between; /* Espace égal entre les éléments */
+    align-items: flex-start; /* Les éléments sont alignés en haut */
 }
 
 .nav__logo {
@@ -54,9 +55,10 @@ Supprime les puces ou les numéros de liste pour tous les éléments de liste.  
 }
 
 .nav__logo img {
-    width: 61.09px; /* Largeur spécifique pour l'image */
-    height: 19px; /* Hauteur spécifique pour l'image */
+    width: 65px; /* Largeur spécifique pour l'image */
+    height: 20px; /* Hauteur spécifique pour l'image */
 }
+
 
 nav ul {
     display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
@@ -138,10 +140,10 @@ nav li a:hover::before {
     margin-bottom: 32px; /* Marge en bas de 32px */
   }
   
-  /* Style pour le conteneur de la zone de recherche */
-  .input-search {
+ /* Style pour le conteneur de la zone de recherche */
+ .input-search {
     display: flex; /* Affichage en flexbox */
-    border: 1px solid var(blanc); /* Bordure de 1px solide avec une couleur définie par une variable 'blanc' */
+    border: 1px solid var(--grey); /* Bordure de 1px solide avec une couleur définie par une variable 'blanc' */
     width: 418px; /* Largeur de 418px */
   }
   
@@ -153,7 +155,6 @@ nav li a:hover::before {
     background-color: var(--main-bg-color); /* Couleur de fond gris clair */
     border-radius: 15px; /* Bordure complètement arrondie */
   }
-  
   
   /* Style pour l'icône de recherche dans la zone de recherche */
   #search-bar--icon {
