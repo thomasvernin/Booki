@@ -65,6 +65,14 @@ nav ul {
     height: 100px; /* Hauteur spécifique pour la liste non ordonnée */
 }
 
+nav {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    flex-direction: row; /* Les éléments sont disposés horizontalement */
+    justify-content: space-between; /* Espace égal entre les éléments */
+    align-items: flex-end; /* Les éléments sont alignés en bas */
+    height: 100px; /* Hauteur spécifique de la barre de navigation */
+}
+
 nav li {
     position: relative; /* Position relative pour permettre le positionnement absolu des pseudo-éléments */
     display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
@@ -80,6 +88,9 @@ nav li a {
     font: 400 16px "Raleway", sans-serif; /* Police et taille spécifiques pour les liens */
     color: var(--black); /* Couleur de texte spécifique */
 }
+
+
+
 
 nav li a:hover {
     cursor: pointer; /* Curseur de la souris devient pointer au survol */
@@ -137,7 +148,7 @@ nav li a:hover::before {
   /* Style pour le conteneur de la zone de recherche */
   .input-search {
     display: flex; /* Affichage en flexbox */
-    border: 1px solid var(lighgrey); /* Bordure de 1px solide avec une couleur définie par une variable 'blanc' */
+    border: 1px solid var(lightgrey); /* Bordure de 1px solide avec une couleur définie par une variable 'blanc' */
     width: 418px; /* Largeur de 418px */
     background-color: var(--main-bg-color); /* Couleur de fond gris clair */
     border-radius: 15px; /* Bordure complètement arrondie */
@@ -170,6 +181,7 @@ nav li a:hover::before {
   /* Style pour le texte de l'attribut placeholder dans le champ de saisie */
   .input-search input::placeholder {
     align-self: center; /* Alignement vertical au centre */
+    color: black;
   }
   
   /* Style pour le bouton de recherche */
