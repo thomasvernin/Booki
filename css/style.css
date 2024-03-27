@@ -1,417 +1,128 @@
 /****** General ***********/
-
-/* Appliquer la police 'Raleway' à tous les éléments de la page */
 * {
     font-family: 'Raleway', sans-serif;
 }
 
-/* Définition des variables de couleur principale, de couleur de fond principale et de couleur de fond pour les filtres */
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
 
-/* Appliquer la couleur principale définie par la variable aux icônes solid de Font Awesome */
 .fa-solid {
     color: var(--main-color);
 }
 
-/* Centrer le contenu de la page horizontalement */
 body {
     display: flex;
     justify-content: center;
 }
 
-
-
-
-/* Entête du site contenant le logo et le menu de navigation */
-
-
-header {
-    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
-    justify-content: space-between; /* Répartition égale de l'espace disponible entre les éléments enfants */
-    padding: 1px; /* Ajout d'un léger espacement intérieur */
-}
-
-/* Styling spécifique pour l'élément avec l'ID "logo" à l'intérieur de l'élément <header> */
-header #logo {
-    padding: 20px 0px; /* Ajout de rembourrage autour du logo */
-}
-
-/* Styling spécifique pour les images à l'intérieur de l'élément avec l'ID "logo" */
-header #logo img {
-    width: 80px; /* Définition de la largeur de l'image du logo */
-}
-
-/* Styling spécifique pour les listes non ordonnées à l'intérieur de l'élément <nav> dans <header> */
-header nav ul {
-    display: flex; /* Utilisation de flexbox pour aligner les éléments de la liste horizontalement */
-    list-style-type: none; /* Suppression des puces de la liste */
-    margin: 0; /* Suppression des marges par défaut de la liste */
-}
-
-/* Styling spécifique pour chaque élément de liste dans le menu de navigation */
-header nav ul li {
-    padding: 5px 20px; /* Ajout de rembourrage à chaque élément de liste */
-    border-top: 4px solid transparent; /* Ajout d'une bordure supérieure transparente */
-    margin-left: 60px; /* Définition de la marge à gauche pour décaler les éléments de liste */
-}
-
-/* Styling au survol de chaque élément de liste dans le menu de navigation */
-header nav ul li:hover {
-    border-color: var(--main-color); /* Changement de la couleur de la bordure supérieure au survol */
-}
-
-/* Styling spécifique pour les liens à l'intérieur des éléments de liste du menu de navigation */
-header nav ul li a {
-    color: black; /* Définition de la couleur du texte des liens */
-    text-decoration: none; /* Suppression du soulignement des liens */
-}
-
-/* Styling au survol des liens à l'intérieur des éléments de liste du menu de navigation */
-header nav ul li:hover a {
-    color: var(--main-color); /* Changement de la couleur du texte des liens au survol */
-}
-
-
-
-
-
-
-/* Partie filtres et info */
-
-/* Réglages pour le conteneur des filtres */
-#filtres_info {
-    padding-left: 46px; /* Décalage de 46 pixels à gauche */
-    padding-top: 30px; /* Décalage de 30 pixels en haut */
-    font-weight: bold !important ; /* Mise en gras du texte */
-}
-
-/* Réglages pour le texte dans les outils (utilisez votre propre classe ici) */
-.texte-outil {
-    font-weight: bold; /* Mise en gras du texte */
-}
-}
-
-/* Réglages pour le titre des filtres */
-#titre_filtres {
-    
-}
-
-
-
-    
-
-
-/* Réglages pour le conteneur principal des filtres */
-#filtres {
-    display: flex; /* Utilisation du modèle de boîte flexible pour les éléments enfants */
-    flex-wrap: wrap; /* Permet le retour à la ligne des éléments flexibles */
-    font-weight: bold; /* Police en gras */
-    font-size: 30px; /* Taille de police */
-    column-gap: 20px; /* Espacement entre les colonnes */
-}
-
-/* Réglages pour le conteneur des catégories de filtres */
-#filtres_categories {
-    display: flex; /* Utilisation du modèle de boîte flexible pour les éléments enfants */
-    margin-left: -33px; /* Décalage de -33 pixels à gauche */
-}
-
-/* Réglages pour les éléments individuels des filtres */
-.aspect_filtres {
-    border: 3px solid #F2F2F2; /* Bordure solide de 3 pixels avec la couleur spécifiée */
-    border-radius: 30px; /* Rayon de bordure pour arrondir les coins */
-    margin-left: 50px; /* Décalage de 40 pixels à gauche */
-    padding: 11px; /* Remplissage intérieur */
-    padding-right: 15px; /* Remplissage à droite */
-    padding-left: 60px; /* Remplissage à gauche */
-    position: relative; /* Position relative pour permettre un positionnement relatif des enfants absolus */
-    font-weight: bold !important; /* Mise en gras du texte */
-}
-
-/* Effets de survol, focus et activé pour les filtres */
-.aspect_filtres:hover,
-.aspect_filtres:focus,
-.aspect_filtres:active {
-    color: #0065FC; /* Changement de couleur du texte */
-    cursor: pointer; /* Curseur de pointeur */
-}
-
-/* Réglages pour les icônes des filtres */
-.icone_filtres {
-    width: 17px; /* Largeur */
-    height: 24px; /* Hauteur */
-    font-size: 25px; /* Taille de police */
-    
-  
-    border-radius: 50%; /* Rayon de bordure pour créer un cercle */
-    padding: 13px; /* Remplissage intérieur */
-    position: absolute; /* Position absolue */
-    left: 0; /* Position à gauche */
-    top: 50%; /* Position au centre verticalement */
-    transform: translateY(-50%); /* Ajustement pour centrer verticalement */
-}
-
-/* Réglages spécifiques pour certaines icônes */
-.fa-money-bill-wave {
-    padding-left: 13px; /* Décalage à gauche */
-}
-
-.fa-child-reaching {
-    padding-left: 17px; /* Décalage à gauche */
-}
-
-/* Réglages pour les paragraphes dans le conteneur des filtres */
-#filtres p {
-    padding-left: 10px; /* Décalage à gauche */
-}
-
-
-
-
-
-/* Partie info */
-
-/* Réglages pour l'icône d'information */
-.fa-info {
-    color: #0065FC; /* Couleur du texte */
-    border: 3px solid #F2F2F2; /* Bordure solide avec la couleur spécifiée */
-    border-radius: 50%; /* Rayon de bordure pour créer un cercle */
-    font-size: 12px; /* Taille de police */
-    padding-top: 2px; /* Décalage en haut */
-    padding-left: 8px; /* Décalage à gauche */
-    padding-right: 8px; /* Décalage à droite */
-    margin-right: 8px; /* Marge à droite */
-    width: 25px; /* Largeur */
-    height: 25px; /* Hauteur */
-}
-
-/* Réglages pour le conteneur d'informations */
-#info {
-    display: flex; /* Utilisation du modèle de boîte flexible pour les éléments enfants */
-    margin-top: 40px; /* Marge en haut */
-    margin-bottom: 40px; /* Marge en bas */
-    font-weight: 500; /* Poids de la police */
-}
-
-/* Réglages pour le texte d'information */
-#texte_info {
-    padding-top: 4px; /* Décalage en haut */
-    padding-left: 3px; /* Décalage à gauche */
-    font-size: 16px; /* Taille de police */
-}
-
-
-
-
-
-
-
-
-
-
-
-
 .main-container {
-    width: 100%; /* Largeur totale */
-    max-width: 1440px; /* Largeur maximale */
-    padding: 0 50px; /* Espacement intérieur de 50px sur les côtés */
-    box-sizing: border-box; /* Inclure les bordures et le rembourrage dans le calcul de la taille */
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
-
-
-
-
-
-
-/* Partie Recherche */
-h1, p {
-    font-size: 22px;
-    margin: 0;
-    margin-left: 0px; /* Vous pouvez ajuster la valeur selon vos besoins */
-}
-
-h1 {
-    font-weight: bold;
-}
-
-p {
-    font-weight: normal; /* Pour annuler le gras */
-    font-size: 16px; /* Taille de police spécifique pour p */
-}
-
-
-
-#recherche{
-    padding-left: 0px;
-    padding-top: 30px;
-}
-#recherche p{
-    padding-top: 10px;
-    padding-bottom: 20px;
-    font-weight: 500; /*pour mettre la police entre normal et gras */
-}
-form {
-    display: flex;
-    margin-top: 0;
-}
-input {
-    padding: 15px;
-    width: 235px;
-    border: 1px solid #F2F2F2;
-    color: #000000;
-    font-weight: bold;
-    font-size: 18px;
-    outline: none; /* Pour supprimer le contour */
-}
-input[type=text]:focus {
-    border: 1px solid #F2F2F2;
-}
-/* Modifie la couleur de fond de l'autocomplétion */
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus {
-    box-shadow: 0 0 0px 1000px white inset;
-    -webkit-box-shadow: 0 0 0px 1000px white inset;
-}
-/* Modification de la police dans le champs de recherche */
-::placeholder {
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    opacity: 1; /* pour foncer la couleur de la police dans firefox */
-}
-/* Mise en forme du bouton rechercher sur ordinateur et tablette */
-.bouton_rechercher_desktop_tablette {
-    background-color: #0065FC;
-    color: white;
-    width: 133px;
-    border: 0px solid #F2F2F2;
-    border-radius: 0px 18px 18px 0px;
-    padding: 15px;
-    font-weight: bold;
-    font-size: 17px;
-}
-.bouton_rechercher_desktop_tablette:hover, .bouton_rechercher_desktop_tablette:focus, .bouton_rechercher_desktop_tablette:active{
-    border: 1px solid #DEEBFF;
-    cursor: pointer;
-}
-/* Icône barre de recherche */
-.fa-location-dot {
-    font-size: 17px; /* Dimensionnement de l'icône "localisation" */
-    border: 2px solid #F2F2F2;
-    background-color: #F2F2F2;
-    padding: 15px;
-    padding-left: 18px;
-    border-radius: 18px 0px 0px 18px;
-}
-
-
-
-
-
-
-
-
 
 a {
-    color: inherit; /* Couleur du texte héritée */
-    text-decoration: none; /* Pas de soulignement */
+    color: inherit;
+    text-decoration: none;
 }
 
 .section-title {
-    margin: 0; /* Supprimer les marges par défaut */
-    font-size: 22px; /* Taille de police */
+    margin: 0;
+    font-size: 22px;
 }
 
 .card {
-    background-color: white; /* Couleur de fond */
-    border-radius: 20px; /* Bordure arrondie */
-    padding: 5px; /* Rembourrage intérieur */
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); /* Ombre portée */
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
-    object-fit: cover; /* Adapter l'image à la taille de la carte */
+    object-fit: cover;
 }
 
 .card-title {
-    font-size: 16px; /* Taille de police */
+    font-size: 16px;
 }
 
 .euro {
-    font-weight: 700; /* Graisse de police */
+    font-weight: 700;
 }
 
 .neutral-star {
-    color: var(--main-bg-color) /* Couleur neutre pour l'étoile */
+    color: var(--main-bg-color)
 }
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
-    display: flex; /* Afficher en ligne */
-    justify-content: space-between; /* Espace égal entre les éléments */
+    display: flex;
+    justify-content: space-between;
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color); /* Couleur de fond */
-    border-radius: 20px; /* Bordure arrondie */
-    padding: 30px; /* Rembourrage intérieur */
-    box-sizing: border-box; /* Inclure les bordures et le rembourrage dans le calcul de la taille */
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%; /* Largeur */
+    width: 65%;
 }
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%; /* Largeur */
+    width: 32%;
 }
 
 .populaires-title {
-    display: flex; /* Afficher en ligne */
-    justify-content: space-between; /* Espace égal entre les éléments */
-    align-items: center; /* Aligner verticalement au centre */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .populaires-cards .card {
-    display: flex; /* Afficher en ligne */
-    margin-top: 33px; /* Marge supérieure */
+    display: flex;
+    margin-top: 33px;
 }
 
 .populaires-cards img {
-    width: 33%; /* Largeur */
-    height: 136px; /* Hauteur */
-    border-top-left-radius: 20px; /* Bordure arrondie */
-    border-bottom-left-radius: 20px; /* Bordure arrondie */
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .populaires-cards .card-content {
-    width: 67%; /* Largeur */
-    padding-left: 15px; /* Rembourrage à gauche */
-    display: flex; /* Afficher en ligne */
-    flex-direction: column; /* Aligner en colonne */
-    justify-content: space-between; /* Espace égal entre les éléments */
-    box-sizing: border-box; /* Inclure les bordures et le rembourrage dans le calcul de la taille */
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px; /* Marge supérieure */
-    margin-bottom: 4px; /* Marge inférieure */
+    margin-top: 10px;
+    margin-bottom: 4px;
 }
 
 .populaires-cards .card-subtitle {
-    margin: 0; /* Supprimer les marges par défaut */
+    margin: 0;
 }
 
 .populaires-cards .card-rating {
-    margin-bottom: 5px; /* Marge inférieure */
+    margin-bottom: 5px;
 }
+
+
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -419,34 +130,34 @@ a {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
-        flex-direction: column; /* Afficher en colonne */
+        flex-direction: column;
     }
 
     .hebergements {
-        width: 100%; /* Largeur totale */
+        width: 100%;
     }
 
     .populaires {
-        width: 100%; /* Largeur totale */
-        margin-top: 50px; /* Marge supérieure */
+        width: 100%;
+        margin-top: 50px;
     }
 
     .populaires-cards {
-        display: flex; /* Afficher en ligne */
-        flex-direction: row; /* Afficher en ligne */
-        justify-content: space-between; /* Espace égal entre les éléments */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .populaires-cards a {
-        width: 30%; /* Largeur */
+        width: 30%;
     }
 
     .populaires-cards .card-title {
-        font-size: 14px; /* Taille de police */
+        font-size: 14px;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px; /* Taille de police */
+        font-size: 13px;
     }
 }
 
@@ -454,7 +165,6 @@ a {
 @media (max-width: 767.98px) {
     /* ... */
 }
-
    
 
 

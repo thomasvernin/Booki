@@ -1,107 +1,52 @@
-<!DOCTYPE html> <!-- Déclaration de type de document HTML -->
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8"> <!-- Définition de l'encodage des caractères -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuration de la vue sur les appareils mobiles -->
-    <title>Booki</title> <!-- Titre de la page -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Préconnexion au serveur de polices -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Préconnexion au serveur de polices avec crossorigin -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css"> <!-- Importation de la feuille de style locale -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="main-container"> <!-- Début du conteneur principal -->
-        <header>
-            <div id="logo">
-                <img src="images/logo/Booki@3x.png">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#hebergement">Hébergements</a></li>
-                    <li><a href="#activite">Activités</a></li>
-                </ul>
-            </nav>
-        </header>
-            
-        <main> <!-- Contenu principal de la page -->
-            <!--Partie Recherche-->
-            <section id="recherche">
-                <div id="identite_du_site">
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
-                </div>
-                <div id="zone_recherche">
-                    <form method="post" action="#" id="formulaire">
-                        <i class="fa-solid fa-location-dot"></i> 
-                        <input type="text" name="localisation" placeholder="Marseille, France" />
-                        <button type="button" class="bouton_rechercher_desktop_tablette">Rechercher</button>
-                       </form>
-                </div>
-            </section>
-            <!--Partie Filtres-->
-            <div id="filtres_info">
-                <div id="filtres">
-                    <div id="titre_filtres">Filtres</div>
-                    <div id="filtres_categories">
-                        <div class="aspect_filtres">
-                            <i class="fa-solid fa-money-bill-wave icone_filtres"></i>
-                            <p id="filtre_eco"> <span class="texte-outil"> Economique </span></p>
-                        </div>
-                        <div class="aspect_filtres">
-                            <i class="fa-solid fa-child-reaching icone_filtres"></i>
-                            <p id="filtre_famille"> <span class="texte-outil"> Familial </span></p>
-                        </div>
-                        <div class="aspect_filtres">
-                            <i class="fa-solid fa-heart icone_filtres"></i>
-                            <p id="filtre_romantique"> <span class="texte-outil">Romantique </span></p>
-                        </div>
-                        <div class="aspect_filtres">
-                            <i class="fa-solid fa-dog icone_filtres"></i>
-                            <p id="filtre_animaux"> <span class="texte-outil"> Autorisés</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div id="info">
-                    <i class="fa-solid fa-info"></i>
-                    <p id="texte_info">Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
-            </div>
-            <div class="hebergements-and-populaires"> <!-- Conteneur pour les sections "hébergements" et "populaires" -->
-                <section class="hebergements"> <!-- Section pour les hébergements -->
+    <div class="main-container">
+        <header></header>
+        <main>
+            <div class="hebergements-and-populaires">
+                <section class="hebergements">
 
                 </section>
-                <section class="populaires"> <!-- Section pour les hébergements populaires -->
-                    <div class="populaires-title"> <!-- Titre de la section "populaires" -->
-                        <h2 class="section-title">Les plus populaires</h2> <!-- Titre de la section -->
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i> <!-- Icône représentant la popularité -->
+                <section class="populaires">
+                    <div class="populaires-title">
+                        <h2 class="section-title">Les plus populaires</h2>
+                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
-                    <div class="populaires-cards"> <!-- Conteneur pour les cartes d'hébergement populaires -->
-                        <a href="#"> <!-- Lien vers l'hébergement -->
-                            <article class="card"> <!-- Article représentant une carte d'hébergement -->
-                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit"> <!-- Image de l'hébergement -->
-                                <div class="card-content"> <!-- Contenu de la carte -->
-                                    <div class="card-txt"> <!-- Texte de la carte -->
-                                        <h3 class="card-title">Hôtel Le soleil du matin</h3> <!-- Titre de l'hébergement -->
-                                        <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p> <!-- Sous-titre de l'hébergement -->
+                    <div class="populaires-cards">
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                                        <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
                                     </div>
-                                    <div class="card-rating"> <!-- Évaluation de l'hébergement -->
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i> <!-- Icône d'étoile pleine représentant une note -->
+                                    <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i> <!-- Icône d'étoile vide représentant une note neutre -->
-                                        <span class="sr-only">Note de 4 sur 5</span> <!-- Texte de remplacement pour l'accessibilité -->
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
                             </article>
                         </a>
-                        <!-- La même structure se répète pour d'autres hébergements -->
-
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -144,12 +89,11 @@
                 </section>
             </div>
         </main>
-        <footer></footer> <!-- Pied de page de la page -->
+        <footer></footer>
     </div>
 </body>
 
 </html>
-
 
 
 
