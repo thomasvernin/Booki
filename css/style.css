@@ -151,9 +151,9 @@ nav li a:hover::before {
   /* Style pour le conteneur de la zone de recherche */
   .input-search {
     display: flex; /* Affichage en flexbox */
-    border: 1px solid var(rgba(163, 158, 158, 0.445)); /* Bordure de 1px solide avec une couleur définie par une variable 'blanc' */
+    border: 1px solid var(--main-bg-color); /* Bordure de 1px solide avec une couleur définie par une variable  */
     width: 418px; /* Largeur de 418px */
-    background-color: var(--grey); /* Couleur de fond gris clair */
+    background-color: var(--main-bg-color); /* Couleur de fond gris clair */
     border-radius: 15px; /* Bordure complètement arrondie */
   }
   
