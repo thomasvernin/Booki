@@ -339,6 +339,7 @@ nav li a:hover::before {
     border-radius: 20px; /* Bordure arrondie */
     cursor: pointer; /* Curseur de la souris devient pointer */
     transition: all 0.2s ease-in-out; /* Ajout d'une transition pour un effet plus doux */
+    background-color: var(--white); /* Couleur de fond spécifique */
 }
 
 .card__main a {
@@ -433,6 +434,7 @@ nav li a:hover::before {
 .card__spensored--container {
     display: flex; /* Utilisation de flexbox pour aligner les éléments verticalement */
     flex-direction: column; /* Les éléments sont disposés en colonne */
+    background-color: var(--white); /* Couleur de fond spécifique */
 }
 
 .offers__spensored h2 {
@@ -489,6 +491,7 @@ nav li a:hover::before {
 
 .card__spensored:nth-child(n + 1) {
     margin-bottom: 33px; /* Marge inférieure spécifique */
+    
 }
 
 .card__description--spensored h3 {
@@ -505,6 +508,8 @@ nav li a:hover::before {
     margin: -2px; /* Marge spécifique */
     font-size: 14px; /* Taille de police spécifique */
 }
+
+
 
   
   
