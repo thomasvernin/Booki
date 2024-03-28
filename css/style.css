@@ -608,147 +608,101 @@ footer h3 {
 /******************************- MEDIA QUERIES SECTION -*************************************/
 
 
-                        /*----------  Tablettes  ----------*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-
-                         /*----------  Header  ----------*/
-
-    
-    /* Ajoute une marge extérieure au header */
+/*----------  Tablettes  ----------*/
+  
+@media (min-width: 768px) and (max-width: 992px) {
+    /*----------  Header  ----------*/
+  
     header {
       margin: 0px 30px 37px 30px;
     }
   
-    /* Augmente la taille de la police pour le champ de recherche */
     .input-search input {
       font-size: 16px;
     }
   
-    /* Espacement entre les boutons dans la barre de filtre */
     .filter-bar__btns {
       gap: 10px;
     }
   
-    /* Style des boutons de la barre de filtre */
     .filter-bar__btn {
       padding: 4px 16px;
       font-size: 15px;
     }
   
-    /* Espacement entre les éléments de la barre de filtre */
     .filter-bar {
       gap: 10px;
     }
 
 
   
-                    /*----------  Hébergements  ----------*/
-    
-/* Arrange les offres en ligne pour s'adapter à l'écran */
-.offers {
-    /* Permet aux offres de se plier (wrap) en fonction de l'espace disponible */
+   /*----------  Hébergements  ----------*/
+  
+   .offers {
     flex-wrap: wrap;
-    /* Ajoute une marge extérieure pour espacer les offres et les centre horizontalement */
-    margin: -22px auto; /* Augmente de 10% la marge extérieure et centre horizontalement */
+    margin: 20px;
   }
-    
-  /* Style pour les offres principales et filtrées */
+
   .offers__main,
 
   .offers__spensored {
-    /* Occupe toute la largeur disponible */
-    width: 140%; /* Augmente de 10% la largeur */
-    /* Supprime les marges par défaut et centre horizontalement */
-    margin: 0 auto;
-    /* Ajoute un rembourrage intérieur pour l'espacement */
-    padding: 30px 10px; /* Augmente de 10% le rembourrage */
+    width: 100%;
+    margin: 0;
+    padding: 42px 40px;
+  }
+
+  .offers__main {
+    margin-bottom: 40px; /* Ajout de marge en bas de offers__main */
   }
   
-  /* Conteneur des cartes filtrées */
-  .card__spensored--container {
-    /* Affiche les cartes filtrées en ligne */
+  .offers__sponsored {
+    margin-top: 40px; /* Ajout de marge en haut de offers__sponsored */
+  }
+
+  .card__spensored--container{
     display: flex;
-    /* Alignement horizontal des éléments */
     flex-direction: row;
   }
-  
-  /* Ajuste la largeur des images des cartes filtrées */
+
   .card__spensored img {
-    /* Redimensionne les images pour qu'elles occupent 55% de la largeur du conteneur */
-    width: 45%; /* Augmente de 10% la largeur */
-    /* Réduit la hauteur des images proportionnellement à la largeur */
-    height: auto;
+    width: 50%;
   }
   
-  /* Style de description des cartes filtrées */
-  .card__description--spensored {
-    /* Ajoute un rembourrage intérieur pour l'espacement du contenu de la description */
-    padding: 17.6px 24.2px 0px 16.5px; /* Augmente de 10% le rembourrage */
-  }
-  
-  /* Espacement horizontal entre les deux premières cartes filtrées */
+
+.card__description--spensored {
+  padding: 16px 22px 0px 15px;
+
+}
+
   .card__spensored:nth-child(-n + 2) {
-    /* Ajoute une marge à droite entre les cartes filtrées */
-    margin-right: 25.3px; /* Augmente de 10% la marge */
+    margin-right: 23px;
   }
-  
-  /* Ajuste la largeur des cartes filtrées à partir de la troisième */
+
   .card__spensored:nth-child(-n + 3) {
-    /* Fait en sorte que les cartes filtrées à partir de la troisième occupent tout l'espace disponible */
-    flex: 20; /* Augmente de 10% la flexibilité */
+    flex: 1;
   }
-  
-  /* Style du titre des descriptions des cartes filtrées */
+
   .card__description--spensored h3 {
-    /* Définit la taille de la police pour les titres des cartes filtrées */
-    font-size: 15.4px; /* Augmente de 10% la taille de la police */
+    font-size: 14px;
   }
-  
-  /* Style du texte des descriptions des cartes filtrées */
+
   .card__description--spensored p {
-    /* Définit la taille de la police pour le texte des cartes filtrées */
-    font-size: 14.3px; /* Augmente de 10% la taille de la police */
+    font-size: 13px;
   }
-  
-  
-  
-  
 
-  
-                /*----------  Activités  ----------*/
-    
-    /* Espacement horizontal entre les trois premières cartes d'activités */
-    .card__activity:nth-child(-n + 3) {
-      margin-right: 20px;
-    }
-  
-    /* Hauteur des images des activités */
-    .activities img {
-      height: 150px;
-    }
-  
-    /* Marge inférieure pour le titre des activités */
-    .activities h2 {
-      margin-bottom: 34px;
-    }
+  /*----------  Activités  ----------*/
+
+  .card__activity:nth-child(-n + 3) {
+    margin-right: 38px;
   }
+  .activities img {
+    height: 211px;
+  }
+  .activities h2 {
+    margin-bottom: 34px;
+  }
+}        
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Small devices (phones, less than 768px) */
