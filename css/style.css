@@ -766,6 +766,7 @@ footer h3 {
       flex-direction: column;
       align-items: flex-start;
     }
+
   
     .filter-bar__btns{
       flex-wrap: wrap;
@@ -777,8 +778,9 @@ footer h3 {
     .filter-bar__btn{
       flex: 1 1 47%;
       font-size: 14px;
-      justify-content: flex-start;
-      padding: 4px 16px;
+      justify-content: center;
+      align-items: center;
+      padding: 24px 14px;
     }
   
     
@@ -853,12 +855,12 @@ footer h3 {
   @media screen and (min-width: 1440px) {
     body {
       margin: 0 auto;
-      max-width: 1500px;
+      max-width: 1440px;
     }
   
   
   
-  /*End of Media queries section*/
+  
 
 
    
