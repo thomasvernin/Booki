@@ -846,9 +846,19 @@ footer h3 {
     
   
     
-  }
   
-  /*=====  End of Media queries section  ======*/
+
+/*----------  Desktop Large  ----------*/
+
+  @media screen and (min-width: 1440px) {
+    body {
+      margin: 0 auto;
+      max-width: 1500px;
+    }
+  
+  
+  
+  /*End of Media queries section*/
 
 
    
