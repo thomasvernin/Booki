@@ -803,32 +803,53 @@ footer h3 {
 
   
     
-/*Hébergements*/
+/* Hébergements */
     
-    .offers {
-      flex-direction: column-reverse;
-      margin: 0 20px;
-    }
+.offers {
+    flex-direction: column-reverse; /* Définit la direction des éléments enfants en colonne inversée */
+    margin: 0 20px; /* Définit les marges à 0 en haut et en bas, et à 20 pixels à gauche et à droite */
+    
+  }
   
-    .offers__spensored{
-      width: 100%;
-      margin: 80px 0;
-      padding: 0;
-    }
+  .offers__spensored{
+    width: 100%; /* Définit la largeur à 100% */
+    margin: 80px 0px; /* Définit les marges à 80 pixels en haut et en bas, et à 0 à gauche et à droite */
+    padding: 0; /* Supprime le remplissage à l'intérieur de l'élément */
+    
+  }
   
-    .offers__main{
-      width: 100%;
-      padding: 0;
-    }
+
   
-    .first-row , .second-row{
-      flex-direction: column;
-      gap: 30px;
-    }
   
-    .card__main{
-      width: 100%;
-    }
+  .offers__main{
+    width: 100%; /* Définit la largeur à 100% */
+    padding: 0; /* Supprime le remplissage à l'intérieur de l'élément */
+  }
+  
+  .first-row, .second-row{
+    flex-direction: column; /* Définit la direction des éléments enfants en colonne */
+    gap: 30px; /* Définit l'espacement entre les éléments enfants à 30 pixels */
+    
+  }
+  
+  .card__main{
+    width: 100%; /* Définit la largeur à 100% */
+    
+  }
+
+  .card__spensored {
+    border-radius: 20px; /* Bordure arrondie */
+    border: 5px solid #ffffff; /* Bordure de 5 pixels solide blanche */
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); /* Ombre de boîte avec des paramètres spécifiques */
+}
+
+    color: #ffffff;
+  
+  
+
+  
+  
+  
   
     
 /* Activités à marseille */
