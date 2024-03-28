@@ -24,6 +24,7 @@ Supprime les puces ou les numéros de liste pour tous les éléments de liste.  
     --grey: #d9d9d9;
     --main-bg-color: #f2f2f2;
     --black: rgba(0, 0, 0, 1);
+    --white : #ffffff ; 
   }
   
   
@@ -818,13 +819,13 @@ footer h3 {
     
   }
   
-
-  
-  
   .offers__main{
-    width: 100%; /* Définit la largeur à 100% */
+    width: 100%;
+    padding: 0;
     padding: 0; /* Supprime le remplissage à l'intérieur de l'élément */
   }
+  
+  
   
   .first-row, .second-row{
     flex-direction: column; /* Définit la direction des éléments enfants en colonne */
@@ -839,11 +840,15 @@ footer h3 {
 
   .card__spensored {
     border-radius: 20px; /* Bordure arrondie */
-    border: 5px solid #ffffff; /* Bordure de 5 pixels solide blanche */
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); /* Ombre de boîte avec des paramètres spécifiques */
-}
-
     color: #ffffff;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); /* Ombre de boîte avec des paramètres spécifiques */
+    
+   }
+
+   
+
+ 
+    
   
   
 
