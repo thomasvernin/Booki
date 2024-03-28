@@ -204,6 +204,7 @@ nav li a:hover::before {
   /* Style lors de l'appui sur le bouton de recherche */
   .search-bar--button:active {
     transform: translateY(1px); /* Déplacement vers le bas de 1px */
+    box-shadow: 0 10px 16px rgba(21, 43, 170, 0.2); /* Ajoute une ombre avec un décalage vertical de 2px, flou de 4px, et une couleur rgba */
   }
   
   /* Style pour l'icône dans le bouton de recherche */
