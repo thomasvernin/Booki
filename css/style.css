@@ -705,12 +705,150 @@ footer h3 {
   
 
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
-}
-   
 
+   
+/*----------  Téléphone mobile  ----------*/
+  
+@media (max-width: 768px) {
+    /*----------  Header  ----------*/
+  
+    header {
+      margin: 0px;
+    }
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav__logo {
+      margin-top: 21px;
+      margin-bottom: 38px;
+    }
+  
+    nav ul {
+      width: 100%;
+      height: 50px;
+    }
+  
+    nav ul li {
+      width: 50%;
+    }
+  
+    nav li a:hover::before {
+      top: 100%;
+    }
+  
+    .search-bar__container {
+      margin: 0px 20px;
+    }
+  
+    .search-bar--button i {
+      display: block;
+    }
+  
+    .search-bar--button span {
+      display: none;
+    }
+  
+    .input-search {
+      width: 100%;
+    }
+  
+    .input-search input {
+      font-size: 16px;
+      width: 100%;
+    }
+    /*----------  Filter bar  ----------*/
+  
+    .filter-bar {
+      margin-top: 34px;
+      gap: 15px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .filter-bar__btns{
+      flex-wrap: wrap;
+      row-gap: 20px;
+      column-gap: 3%;
+      padding: 0;
+    }
+  
+    .filter-bar__btn{
+      flex: 1 1 47%;
+      font-size: 14px;
+      justify-content: flex-start;
+      padding: 4px 16px;
+    }
+  
+    
+    /*----------  Hébergements  ----------*/
+    
+    .offers {
+      flex-direction: column-reverse;
+      margin: 0 20px;
+    }
+  
+    .offers__spensored{
+      width: 100%;
+      margin: 80px 0;
+      padding: 0;
+    }
+  
+    .offers__main{
+      width: 100%;
+      padding: 0;
+    }
+  
+    .first-row , .second-row{
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .card__main{
+      width: 100%;
+    }
+  
+    
+    /*----------  Activités à marseille  ----------*/
+    
+    .activities{
+      margin: 80px 20px 0 20px;
+    }
+    .activities-row {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .card__activity{
+      width: 100%;
+      height:190px ;
+    }
+  
+    .activities img{
+      height: 124px;
+    }
+  
+    
+    /*----------  Footer  ----------*/
+    
+    footer{
+      flex-direction: column;
+      padding: 0;
+      margin: 80px 20px;
+      gap: 30px;
+    }
+  
+    .footer__column:nth-child(-n + 2){
+      width: 100%;
+    }
+  
+    
+  
+    
+  }
+  
+  /*=====  End of Media queries section  ======*/
 
 
    
