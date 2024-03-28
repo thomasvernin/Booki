@@ -580,17 +580,17 @@ footer h3 {
 }
 
 .footer__column:nth-child(-n + 2) {
-    width: 30%; /* Largeur de la colonne spécifique pour les deux premières colonnes */
+    width: 35%; /* Largeur de la colonne spécifique pour les deux premières colonnes */
 }
 
 .link-list li:nth-child(-n + 2) {
-    margin-bottom: 12px; /* Marge inférieure spécifique pour les deux premiers éléments de liste */
+    margin-bottom: 15px; /* Marge inférieure spécifique pour les deux premiers éléments de liste */
 }
 
 .link-list a {
     text-decoration: none; /* Pas de soulignement pour les liens */
     color: var(--black); /* Couleur de texte spécifique */
-    font: 400 16px "Raleway", sans-serif; /* Police et taille spécifiques pour les liens */
+    font: 400 15px "Raleway", sans-serif; /* Police et taille spécifiques pour les liens */
 }
 
 .link-list a:hover {
