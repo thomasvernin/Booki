@@ -693,10 +693,10 @@ footer h3 {
   /*----------  Activités  ----------*/
 
   .card__activity:nth-child(-n + 3) {
-    margin-right: 38px;
+    margin-right: 20px;
   }
   .activities img {
-    height: 211px;
+    height: 150px;
   }
   .activities h2 {
     margin-bottom: 34px;
