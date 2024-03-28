@@ -421,20 +421,24 @@ nav li a:hover::before {
 
   /***********************************- Les plus populaires -***************************************/
   
-  .offers__spensored {
+ /***********************************- Les plus populaires -***************************************/
+
+.offers__spensored {
     width: calc((100% - 40px) / 3); /* Un tiers de l'espace total moins 40px d'espacement */
     margin-left: 40px; /* Marge à gauche spécifique */
     padding: 41px 40px 1px 37px; /* Rembourrage spécifique */
     background-color: var(--main-bg-color); /* Couleur de fond spécifique */
     border-radius: 20px; /* Bordure arrondie */
-    padding: 30px; /* Rembourrage spécifique */
     box-sizing: border-box; /* Inclure le rembourrage dans le calcul de la largeur */
+}
+
+.offers__spensored .card__spensored {
+    background-color: var(--white); /* Réinitialisation de la couleur de fond pour les cards */
 }
 
 .card__spensored--container {
     display: flex; /* Utilisation de flexbox pour aligner les éléments verticalement */
     flex-direction: column; /* Les éléments sont disposés en colonne */
-    background-color: var(--white); /* Couleur de fond spécifique */
 }
 
 .offers__spensored h2 {
@@ -508,6 +512,7 @@ nav li a:hover::before {
     margin: -2px; /* Marge spécifique */
     font-size: 14px; /* Taille de police spécifique */
 }
+
 
 
 
