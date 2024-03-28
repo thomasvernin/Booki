@@ -567,10 +567,10 @@ nav li a:hover::before {
 footer {
     display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
     padding: 45px 0px 24px 118px; /* Rembourrage spécifique */
-    margin-bottom: 27px; /* Marge inférieure spécifique */
+    margin-bottom: 0px; /* Marge inférieure spécifique */
     background-color: var(--main-bg-color); /* Couleur de fond spécifique */
     border-radius: 0px; /* Bordure sans arrondi */
-    padding: 30px; /* Rembourrage spécifique */
+    padding: 40px; /* Rembourrage spécifique */
     box-sizing: border-box; /* Inclure le rembourrage dans le calcul de la largeur */
 }
 
