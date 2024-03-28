@@ -143,8 +143,9 @@ nav li a:hover::before {
  /* Style pour le conteneur de la zone de recherche */
  .input-search {
     display: flex; /* Affichage en flexbox */
-    border: 1px solid var(--grey); /* Bordure de 1px solide avec une couleur définie par une variable 'blanc' */
+    border: 1px solid var(--light-grey) ; /* Bordure de 1px solide avec une couleur définie par une variable 'blanc' */
     width: 418px; /* Largeur de 418px */
+    
   }
   
   /* Style pour le conteneur de la zone de recherche */
@@ -565,7 +566,7 @@ nav li a:hover::before {
 
 
   
- /*- Footer -*/
+ /*Footer*/
 footer {
     display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
     padding: 45px 0px 24px 118px; /* Rembourrage spécifique */
@@ -605,13 +606,17 @@ footer h3 {
 
 
 
+
+
+
 /******************************- MEDIA QUERIES SECTION -*************************************/
 
 
-/*----------  Tablettes  ----------*/
+/*Tablettes*/
   
 @media (min-width: 768px) and (max-width: 992px) {
-    /*----------  Header  ----------*/
+
+    /*Header*/
   
     header {
       margin: 0px 30px 37px 30px;
@@ -636,7 +641,7 @@ footer h3 {
 
 
   
-   /*----------  Hébergements  ----------*/
+   /*Hébergements*/
   
    .offers {
     flex-wrap: wrap;
@@ -669,10 +674,10 @@ footer h3 {
   }
   
 
-.card__description--spensored {
+  .card__description--spensored {
   padding: 5px 20px 0px 10px;
 
-}
+  }
 
   .card__spensored:nth-child(-n + 2) {
     margin-right: 23px;
@@ -690,7 +695,7 @@ footer h3 {
     font-size: 13px;
   }
 
-  /*----------  Activités  ----------*/
+  /*Activités*/
 
   .card__activity:nth-child(-n + 3) {
     margin-right: 20px;
@@ -706,11 +711,14 @@ footer h3 {
 
 
 
+
+
    
 /*----------  Téléphone mobile  ----------*/
   
-@media (max-width: 767px) {
-    /*----------  Header  ----------*/
+@media (max-width: 767px) { 
+
+/*Header*/
   
     header {
       margin: 0px;
@@ -758,33 +766,43 @@ footer h3 {
       font-size: 16px;
       width: 100%;
     }
-    /*----------  Filter bar  ----------*/
+
+
+/*Filter bar*/
   
-    .filter-bar {
-      margin-top: 34px;
-      gap: 15px;
-      flex-direction: column;
-      align-items: flex-start;
-    }
+.filter-bar {
+    margin-top: 34px; /* Définit la marge supérieure à 34 pixels */
+    gap: 15px; /* Définit l'espacement entre les éléments enfants à 15 pixels */
+    flex-direction: column; /* Définit la direction de flexion des éléments enfants en colonne */
+    align-items: flex-start; /* Aligne les éléments enfants sur le côté de départ de l'axe transversal */
+  }
+
+
+  .filter-bar__btns{
+    flex-wrap: wrap; /* Définit si les éléments enfants peuvent être enveloppés sur plusieurs lignes */
+    row-gap: 20px; /* Définit l'espacement entre les lignes des éléments enfants */
+    column-gap: 3%; /* Définit l'espacement entre les colonnes des éléments enfants en pourcentage */
+    padding: 0; /* Supprime le remplissage à l'intérieur de l'élément parent */
+  }
+
+  .filter-bar__btn{
+    flex: 1 1 47%; /* Définit les propriétés de flexibilité pour le redimensionnement des éléments enfants */
+    font-size: 17px; /* Définit la taille de police à 14 pixels */
+    justify-content: center; /* Aligne les éléments enfants sur l'axe principal au centre */
+    align-items: center; /* Aligne les éléments enfants sur l'axe transversal au centre */
+    padding: 24px 14px; /* Définit les espacements intérieurs de 24 pixels en haut et en bas, et de 14 pixels à gauche et à droite */
+  }
+
+  .fa-solid.fa-person {
+    margin-left: -30px; /* Décalage de la classe vers la gauche de 5 pixels */
+}
+
+
+
 
   
-    .filter-bar__btns{
-      flex-wrap: wrap;
-      row-gap: 20px;
-      column-gap: 3%;
-      padding: 0;
-    }
-  
-    .filter-bar__btn{
-      flex: 1 1 47%;
-      font-size: 14px;
-      justify-content: center;
-      align-items: center;
-      padding: 24px 14px;
-    }
-  
     
-    /*----------  Hébergements  ----------*/
+/*Hébergements*/
     
     .offers {
       flex-direction: column-reverse;
@@ -812,7 +830,7 @@ footer h3 {
     }
   
     
-    /*----------  Activités à marseille  ----------*/
+/* Activités à marseille */
     
     .activities{
       margin: 80px 20px 0 20px;
@@ -832,7 +850,7 @@ footer h3 {
     }
   
     
-    /*----------  Footer  ----------*/
+/*Footer*/
     
     footer{
       flex-direction: column;
@@ -850,7 +868,7 @@ footer h3 {
     
   
 
-/*----------  Desktop Large  ----------*/
+/*Desktop Large*/
 
   @media screen and (min-width: 1440px) {
     body {
