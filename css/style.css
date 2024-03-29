@@ -675,7 +675,62 @@ footer h3 {
 /* Style spécifique pour l'élément offers__main */
 .offers__main {
     margin-bottom: 40px; /* Ajout de marge en bas de offers__main */
+    
+padding: 34px 44px 46px 36px; /* Rembourrage spécifique */
 }
+
+
+
+
+
+
+
+
+
+.card__main {
+    height: max-content;
+}
+
+.card__main img {
+   
+    height: 80px; /* Hauteur spécifique */
+    
+}
+
+.card__main h3 {
+    font: 700 15px "Raleway", sans-serif; /* Police et taille spécifiques pour les titres */
+}
+
+.card__main p {
+    font: 400 12px "Raleway", sans-serif; /* Police et taille spécifiques pour les paragraphes */
+}
+
+.stars__container--main i {
+    color: var(--main-color); /* Couleur d'étoile spécifique */
+    margin: -2px; /* Marge spécifique */
+    font-size: 10px; /* Taille de police spécifique */
+}
+
+.card__description--main {
+    padding: 4px 0 6px 6px; /* Rembourrage spécifique */
+}
+
+.card__description--main > h3,
+.card__description--main > p {
+    margin-bottom: 0px; /* Marge inférieure spécifique */
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Style spécifique pour l'élément offers__sponsored */
 .offers__sponsored {
