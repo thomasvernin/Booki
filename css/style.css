@@ -806,7 +806,10 @@ footer h3 {
     justify-content: center; /* Aligne les éléments enfants sur l'axe principal au centre */
     align-items: center; /* Aligne les éléments enfants sur l'axe transversal au centre */
     padding: 24px 14px; /* Définit les espacements intérieurs de 24 pixels en haut et en bas, et de 14 pixels à gauche et à droite */
-  }
+    border-radius: 35px; /* Réduit le rayon de la bordure */
+}
+
+  
 
   .fa-solid.fa-person {
     margin-left: -30px; /* Décalage de la classe vers la gauche de 5 pixels */
