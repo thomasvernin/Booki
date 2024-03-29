@@ -832,6 +832,7 @@ footer h3 {
     margin-left: -20px; /* Supprimer la marge à gauche */
     margin-right: -50px;
     border-radius: 0px; /* Bordure arrondie */
+    margin-top: 40px; /* Ajout de la marge haute */
     
 }
 
@@ -841,6 +842,7 @@ footer h3 {
     width: 100%;
     padding: 0;
     background-color: var(--white); /* Couleur de fond spécifique */
+    margin-top: 50px; /* Ajout de la marge haute */
  }
 
   
