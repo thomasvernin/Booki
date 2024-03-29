@@ -867,6 +867,10 @@ footer h3 {
     margin-right: -17px;
    }
 
+   .card__main img {
+    height: 104px; /* Hauteur spécifique */
+    }
+
 
 
   
@@ -876,22 +880,29 @@ footer h3 {
     
 /* Activités à marseille */
     
-    .activities{
-      margin: 80px 20px 0 20px;
-    }
-    .activities-row {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
-    .card__activity{
-      width: 100%;
-      height:190px ;
-    }
-  
-    .activities img{
-      height: 124px;
-    }
+    /* Style pour la classe d'éléments activities */
+.activities {
+    margin: 80px 20px 0 20px; /* Marge de 80 pixels en haut, 0 à droite, 0 en bas, et 20 à gauche */
+}
+
+/* Style pour la classe d'éléments activities-row */
+.activities-row {
+    display: flex; /* Affichage en tant que flexbox */
+    flex-direction: column; /* Définit la direction des éléments enfants en colonne */
+    gap: 30px; /* Espacement de 30 pixels entre les éléments enfants */
+}
+
+/* Style pour la classe d'éléments card__activity */
+.card__activity {
+    width: 100%; /* Largeur de 100% */
+    height: 240px; /* Hauteur de 190 pixels */
+}
+
+/* Style pour les images à l'intérieur des éléments activities */
+.activities img {
+    height: 180px; /* Hauteur de l'image de 124 pixels */
+}
+
   
     
 /*Footer*/
