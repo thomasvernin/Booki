@@ -831,6 +831,7 @@ footer h3 {
     width: 113%; /* Prendre toute la largeur de l'écran */
     margin-left: -20px; /* Supprimer la marge à gauche */
     margin-right: -50px;
+    border-radius: 0px; /* Bordure arrondie */
 }
 
   
