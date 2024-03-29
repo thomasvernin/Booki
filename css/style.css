@@ -856,12 +856,6 @@ footer h3 {
    }
 
 
-   
-
- 
-    
-  
-  
 
   
   
@@ -900,6 +894,10 @@ footer h3 {
     .footer__column:nth-child(-n + 2){
       width: 100%;
     }
+    
+
+/*Fin du responsive design*/
+
   
     
   
