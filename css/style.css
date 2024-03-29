@@ -906,13 +906,7 @@ footer h3 {
     
   
 
-/*Desktop Large*/
 
-  @media screen and (min-width: 1440px) {
-    body {
-      margin: 0 auto;
-      max-width: 1440px;
-    }
   
   
   
