@@ -831,12 +831,15 @@ footer h3 {
     padding: 0; /* Supprime le remplissage à l'intérieur de l'élément */
     
   }
+
+  
   
   .offers__main{
     width: 100%;
     padding: 0;
-    padding: 0; /* Supprime le remplissage à l'intérieur de l'élément */
-  }
+    background-color: var(--white); /* Couleur de fond spécifique */
+ }
+
   
   
   
