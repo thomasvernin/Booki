@@ -901,7 +901,7 @@ footer {
     flex-direction: column; /* Définit la direction des éléments enfants en colonne */
     padding: 0; /* Aucun rembourrage à l'intérieur du footer */
     margin: 0px 0px; /* Marge de 80 pixels en haut et en bas, 20 pixels à gauche et à droite */
-    gap: 20px; /* Espacement de 30 pixels entre les éléments enfants */
+    gap: 25px; /* Espacement de 30 pixels entre les éléments enfants */
     margin-top: 50px; /* Ajout de la marge haute */
     
 }
@@ -909,7 +909,7 @@ footer {
 /* Style pour les deux premières colonnes du footer */
 .footer__column:nth-child(-n + 3) {
     width: 100%; /* Les deux premières colonnes occupent 100% de la largeur */
-    margin: 50px 0 50px 20px; /* Marge de 50 pixels en haut et en bas, 20 pixels à gauche, aucune à droite */
+    margin: 20px 0 20px 20px; /* Marge de 20 pixels en haut et en bas, 20 pixels à gauche, aucune à droite */
 }
 
 
