@@ -825,12 +825,13 @@ footer h3 {
     
   }
   
-  .offers__spensored{
-    width: 100%; /* Définit la largeur à 100% */
-    margin: 80px 0px; /* Définit les marges à 80 pixels en haut et en bas, et à 0 à gauche et à droite */
-    padding: 0; /* Supprime le remplissage à l'intérieur de l'élément */
-    
-  }
+ 
+
+  .offers__spensored {
+    width: 113%; /* Prendre toute la largeur de l'écran */
+    margin-left: -20px; /* Supprimer la marge à gauche */
+    margin-right: -50px;
+}
 
   
   
