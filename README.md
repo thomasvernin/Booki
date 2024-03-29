@@ -53,7 +53,7 @@ Etape 10 : Mise en place du responsive design (Il y a 4 formats de maquettes)
 - Vérifier l'affichage desktop Large.
 
 Etape 11 : Vérifier la qualité du code
-- 
+- J'ai corrigé toutes les erreurs html et css.
 
 
 
