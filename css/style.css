@@ -658,57 +658,66 @@ footer h3 {
   
    /*Hébergements*/
   
-   .offers {
-    flex-wrap: wrap;
-    margin: 20px;
-  }
+   /* Début du style pour la classe d'éléments offers */
+.offers {
+    flex-wrap: wrap; /* Permet aux éléments enfants de passer à la ligne lorsque la largeur de la fenêtre est réduite */
+    margin: 20px; /* Marge de 20 pixels autour des éléments */
+}
 
-  .offers__main,
+/* Style pour les éléments offers__main et offers__spensored */
+.offers__main,
+.offers__spensored {
+    width: 100%; /* Largeur de 100% */
+    margin: 0; /* Aucune marge */
+    padding: 0 5px 0px; /* Rembourrage de 0 pixels en haut, 5 pixels à gauche et à droite, 20 pixels en bas */
+}
 
-  .offers__spensored {
-    width: 100%;
-    margin: 0;
-    padding: 40px 5px;
-  }
-
-  .offers__main {
+/* Style spécifique pour l'élément offers__main */
+.offers__main {
     margin-bottom: 40px; /* Ajout de marge en bas de offers__main */
-  }
-  
-  .offers__sponsored {
+}
+
+/* Style spécifique pour l'élément offers__sponsored */
+.offers__sponsored {
     margin-top: 40px; /* Ajout de marge en haut de offers__sponsored */
-  }
+}
 
-  .card__spensored--container{
-    display: flex;
-    flex-direction: row;
-  }
+/* Style pour le conteneur des cartes sponsorisées */
+.card__spensored--container {
+    display: flex; /* Affichage en tant que flexbox */
+    flex-direction: row; /* Définit la direction des éléments enfants en ligne */
+}
 
-  .card__spensored img {
-    width: 30%;
-  }
-  
+/* Style pour les images à l'intérieur des cartes sponsorisées */
+.card__spensored img {
+    width: 30%; /* Largeur de l'image de 30% */
+}
 
-  .card__description--spensored {
-  padding: 5px 20px 0px 10px;
+/* Style pour la description à l'intérieur des cartes sponsorisées */
+.card__description--spensored {
+    padding: 5px 20px 0px 10px; /* Rembourrage de 5 pixels en haut, 20 pixels à droite, 0 en bas, et 10 pixels à gauche */
+}
 
-  }
+/* Style pour les deux premières cartes sponsorisées */
+.card__spensored:nth-child(-n + 2) {
+    margin-right: 23px; /* Marge de 23 pixels à droite pour les deux premières cartes */
+}
 
-  .card__spensored:nth-child(-n + 2) {
-    margin-right: 23px;
-  }
+/* Style pour les trois premières cartes sponsorisées */
+.card__spensored:nth-child(-n + 3) {
+    flex: 1; /* Distribution égale de l'espace disponible pour les trois premières cartes */
+}
 
-  .card__spensored:nth-child(-n + 3) {
-    flex: 1;
-  }
+/* Style pour les titres à l'intérieur des cartes sponsorisées */
+.card__description--spensored h3 {
+    font-size: 14px; /* Taille de police de 14 pixels pour les titres */
+}
 
-  .card__description--spensored h3 {
-    font-size: 14px;
-  }
+/* Style pour les paragraphes à l'intérieur des cartes sponsorisées */
+.card__description--spensored p {
+    font-size: 13px; /* Taille de police de 13 pixels pour les paragraphes */
+}
 
-  .card__description--spensored p {
-    font-size: 13px;
-  }
 
   /*Activités*/
 
@@ -761,6 +770,9 @@ footer h3 {
       top: 100%;
     }
   
+
+    /*Barre de recherche */
+
     .search-bar__container {
       margin: 0px 20px;
     }
@@ -775,6 +787,8 @@ footer h3 {
   
     .input-search {
       width: 100%;
+      margin-top: 30px; /* Ajout de la marge haute */
+
     }
   
     .input-search input {
