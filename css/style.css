@@ -832,6 +832,7 @@ footer h3 {
     margin-left: -20px; /* Supprimer la marge à gauche */
     margin-right: -50px;
     border-radius: 0px; /* Bordure arrondie */
+    
 }
 
   
@@ -860,7 +861,8 @@ footer h3 {
     border-radius: 20px; /* Bordure arrondie */
     color: #ffffff;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); /* Ombre de boîte avec des paramètres spécifiques */
-    
+    margin-left: -20px; /* Supprimer la marge à gauche */
+    margin-right: -17px;
    }
 
 
