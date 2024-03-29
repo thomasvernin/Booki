@@ -50,7 +50,7 @@ Etape 10 : Mise en place du responsive design (Il y a 4 formats de maquettes)
 - La version desktop du site, pleinement fonctionnelle, se comportant  correctement de la résolution 1024 px à la résolution 1440 px.
 - Media queries <1024px pour l’affichage tablette.
 - Media queries <768px pour l’affichage mobile.
-- Media queries <1441 pour l'affichage desktop Large.
+- Vérifier l'affichage desktop Large.
 
 Etape 11 : Vérifier la qualité du code
 - 
