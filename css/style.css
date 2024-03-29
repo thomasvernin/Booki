@@ -750,17 +750,19 @@ padding: 34px 44px 46px 36px; /* Rembourrage spécifique */
 
 /* Style pour la description à l'intérieur des cartes sponsorisées */
 .card__description--spensored {
-    padding: 5px 20px 0px 10px; /* Rembourrage de 5 pixels en haut, 20 pixels à droite, 0 en bas, et 10 pixels à gauche */
+    padding: 5px 10px 0px 20px; /* Rembourrage de 5 pixels en haut, 20 pixels à droite, 0 en bas, et 10 pixels à gauche */
 }
 
 /* Style pour les deux premières cartes sponsorisées */
 .card__spensored:nth-child(-n + 2) {
-    margin-right: 23px; /* Marge de 23 pixels à droite pour les deux premières cartes */
+    margin-right: 30px; /* Marge de 23 pixels à droite pour les deux premières cartes */
 }
 
 /* Style pour les trois premières cartes sponsorisées */
 .card__spensored:nth-child(-n + 3) {
     flex: 1; /* Distribution égale de l'espace disponible pour les trois premières cartes */
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* Style pour les titres à l'intérieur des cartes sponsorisées */
