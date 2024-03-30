@@ -615,6 +615,17 @@ footer h3 {
     text-decoration: underline; /* Soulignement des liens au survol */
 }
 
+
+
+
+footer .copyright {
+    position: absolute;
+    bottom: 10px; /* Ajustez selon la distance que vous souhaitez du bas */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
   
 
 
