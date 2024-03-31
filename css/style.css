@@ -779,6 +779,12 @@ padding: 34px 44px 46px 36px; /* Rembourrage spécifique */
 
 .stars__container--spensored i {
     font-size: 10px; /* Taille de police spécifique */
+    
+}
+
+.offers__spensored-title i {
+    position: relative;
+    left: -35px; /* ajustez la valeur selon vos besoins */
 }
 
 .offers__spensored h2 {
