@@ -626,7 +626,7 @@ footer h3 {
 
 /******************************- MEDIA QUERIES SECTION -*************************************/
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
     /*Header*/
   
