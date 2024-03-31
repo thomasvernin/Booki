@@ -723,15 +723,13 @@ padding: 34px 44px 46px 36px; /* Rembourrage spécifique */
 
 
 
-
-
-
-
-
-
 /* Style spécifique pour l'élément offers__sponsored */
 .offers__sponsored {
     margin-top: 40px; /* Ajout de marge en haut de offers__sponsored */
+    width: 100%; /* Modification de la largeur à 80% */
+    
+    
+    
     
 }
 
@@ -740,6 +738,7 @@ padding: 34px 44px 46px 36px; /* Rembourrage spécifique */
     display: flex; /* Affichage en tant que flexbox */
     flex-direction: row; /* Définit la direction des éléments enfants en ligne */
     height: 140px; /* Modification de la hauteur à 200 pixels */
+    
 }
 
 /* Style pour les images à l'intérieur des cartes sponsorisées */
@@ -755,7 +754,7 @@ padding: 34px 44px 46px 36px; /* Rembourrage spécifique */
 
 /* Style pour les deux premières cartes sponsorisées */
 .card__spensored:nth-child(-n + 2) {
-    margin-right: 30px; /* Marge de 23 pixels à droite pour les deux premières cartes */
+    margin-right: 23px; /* Marge de 23 pixels à droite pour les deux premières cartes */
 }
 
 /* Style pour les trois premières cartes sponsorisées */
@@ -763,6 +762,7 @@ padding: 34px 44px 46px 36px; /* Rembourrage spécifique */
     flex: 1; /* Distribution égale de l'espace disponible pour les trois premières cartes */
     margin-left: 30px;
     margin-right: 30px;
+    
 }
 
 /* Style pour les titres à l'intérieur des cartes sponsorisées */
@@ -780,6 +780,20 @@ padding: 34px 44px 46px 36px; /* Rembourrage spécifique */
 .stars__container--spensored i {
     font-size: 10px; /* Taille de police spécifique */
 }
+
+.offers__spensored h2 {
+    margin-bottom: 35px; /* Marge inférieure spécifique */
+}
+
+.offers__spensored-title {
+    margin-left: 30px ;
+    margin-top: 20px;
+}
+
+
+
+
+
 
 
 
