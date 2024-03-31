@@ -626,9 +626,6 @@ footer h3 {
 
 /******************************- MEDIA QUERIES SECTION -*************************************/
 
-
-/*Tablettes*/
-  
 @media (min-width: 768px) and (max-width: 992px) {
 
     /*Header*/
@@ -656,6 +653,7 @@ footer h3 {
 
 
   
+ 
    /*Hébergements*/
   
    /* Début du style pour la classe d'éléments offers */
@@ -731,7 +729,6 @@ padding: 34px 44px 46px 36px; /* Rembourrage spécifique */
 
 
 
-
 /* Style spécifique pour l'élément offers__sponsored */
 .offers__sponsored {
     margin-top: 40px; /* Ajout de marge en haut de offers__sponsored */
@@ -783,6 +780,9 @@ padding: 34px 44px 46px 36px; /* Rembourrage spécifique */
 .stars__container--spensored i {
     font-size: 10px; /* Taille de police spécifique */
 }
+
+
+
 
 
   /*Activités*/
