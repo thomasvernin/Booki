@@ -611,8 +611,16 @@ footer h3 {
 
 .link-list a:hover {
     text-decoration: underline;
+   
 
 }
+
+.link-list li {
+    margin-bottom: 20px; /* Espacement de 20px entre chaque élément de liste */
+}
+
+
+
 
 .footer__copyright {
     width: 100%; /* Prend toute la largeur */
@@ -1078,6 +1086,7 @@ footer h3 {
     position: absolute;
     bottom: 0px; /* Ajustement selon votre préférence */
     left: 0;
+
 }
 
 
