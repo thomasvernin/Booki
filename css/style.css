@@ -780,6 +780,8 @@ padding: 34px 44px 46px 36px; /* Rembourrage spécifique */
     flex: 1; /* Distribution égale de l'espace disponible pour les trois premières cartes */
     margin-left: 30px;
     margin-right: 30px;
+    margin-left: 10px; /* Réduction supplémentaire de la marge à gauche pour les trois premières cartes */
+    margin-right: 10px; /* Réduction supplémentaire de la marge à droite pour les trois premières cartes */
     
 }
 
