@@ -581,39 +581,48 @@ nav li a:hover::before {
 
 
   
- /*Footer*/
+/* Footer */
 footer {
-    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
-    padding: 45px 0px 24px 118px; /* Rembourrage spécifique */
-    margin-bottom: 0px; /* Marge inférieure spécifique */
-    background-color: var(--main-bg-color); /* Couleur de fond spécifique */
-    border-radius: 0px; /* Bordure sans arrondi */
-    padding: 40px; /* Rembourrage spécifique */
-    box-sizing: border-box; /* Inclure le rembourrage dans le calcul de la largeur */
+    display: flex;
+    flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
+    padding: 40px;
+    background-color: var(--main-bg-color);
+    border-radius: 0px;
+    box-sizing: border-box;
+    position: relative; /* Positionnement relatif pour le positionnement absolu */
 }
 
 footer h3 {
-    font: 700 18px "Raleway", sans-serif; /* Police et taille spécifiques pour les titres */
-    margin-bottom: 20px; /* Marge inférieure spécifique */
+    font: 700 18px "Raleway", sans-serif;
+    margin-bottom: 30px;
 }
 
-.footer__column:nth-child(-n + 2) {
-    width: 35%; /* Largeur de la colonne spécifique pour les deux premières colonnes */
-}
-
-.link-list li:nth-child(-n + 2) {
-    margin-bottom: 15px; /* Marge inférieure spécifique pour les deux premiers éléments de liste */
+.footer__column {
+    width: calc(33.333% - 20px); /* Ajustement pour les colonnes */
+    margin-right: 20px;
+    margin-bottom: 70px;
 }
 
 .link-list a {
-    text-decoration: none; /* Pas de soulignement pour les liens */
-    color: var(--black); /* Couleur de texte spécifique */
-    font: 400 15px "Raleway", sans-serif; /* Police et taille spécifiques pour les liens */
+    text-decoration: none;
+    color: var(--black);
+    font: 400 15px "Raleway", sans-serif;
 }
 
 .link-list a:hover {
-    text-decoration: underline; /* Soulignement des liens au survol */
+    text-decoration: underline;
+
 }
+
+.footer__copyright {
+    width: 100%; /* Prend toute la largeur */
+    text-align: center; /* Centre le texte */
+    position: absolute;
+    bottom: 20px; /* Ajustement selon votre préférence */
+    left: 0;
+    font: 700 18px "Raleway", sans-serif;
+}
+
 
   
 
@@ -816,7 +825,12 @@ padding: 34px 44px 46px 36px; /* Rembourrage spécifique */
   .activities h2 {
     margin-bottom: 34px;
   }
-}        
+}       
+
+.footer__copyright {
+    font: 700 18px "Raleway", sans-serif;
+}
+
   
 
 
@@ -1025,6 +1039,47 @@ footer {
     width: 100%; /* Les deux premières colonnes occupent 100% de la largeur */
     margin: 20px 0 20px 20px; /* Marge de 20 pixels en haut et en bas, 20 pixels à gauche, aucune à droite */
 }
+
+/* Footer */
+footer {
+    display: flex;
+    flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
+    padding: 15px;
+    background-color: var(--main-bg-color);
+    border-radius: 0px;
+    box-sizing: border-box;
+    position: relative; /* Positionnement relatif pour le positionnement absolu */
+}
+
+footer h3 {
+    font: 700 18px "Raleway", sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer__column {
+    width: calc(33.333% - 20px); /* Ajustement pour les colonnes */
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: var(--black);
+    font: 400 15px "Raleway", sans-serif;
+}
+
+.link-list a:hover {
+    text-decoration: underline;
+}
+
+.footer__copyright {
+    width: 100%; /* Prend toute la largeur */
+    text-align: center; /* Centre le texte */
+    position: absolute;
+    bottom: 0px; /* Ajustement selon votre préférence */
+    left: 0;
+}
+
 
 
 
