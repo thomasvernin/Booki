@@ -760,7 +760,7 @@ padding: 34px 44px 46px 36px; /* Rembourrage spécifique */
 
 /* Style pour les images à l'intérieur des cartes sponsorisées */
 .card__spensored img {
-    width: 40%; /* Largeur de l'image de 30% */
+    width: 30%; /* Largeur de l'image de 30% */
     height: 97px;
 }
 
