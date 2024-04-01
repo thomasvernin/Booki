@@ -363,11 +363,7 @@ nav li a:hover::before {
     font: 400 14px "Raleway", sans-serif; /* Police et taille spécifiques pour les paragraphes */
 }
 
-.stars__container--main i {
-    color: var(--main-color); /* Couleur d'étoile spécifique */
-    margin: -2px; /* Marge spécifique */
-    font-size: 14px; /* Taille de police spécifique */
-}
+
 
 .card__description--main {
     padding: 4px 0 6px 11px; /* Rembourrage spécifique */
@@ -418,6 +414,21 @@ nav li a:hover::before {
 .prix {
     font-weight: bold;
 }
+
+
+.stars__container--main i {
+    color: var(--main-color); /* Couleur d'étoile spécifique */
+    margin: -2px; /* Marge spécifique */
+    font-size: 14px; /* Taille de police spécifique */
+}
+
+/* Style pour la cinquième étoile gris clair */
+.stars__container--main i:nth-child(5) {
+    color: var(--main-bg-color); /* Couleur gris clair pour la cinquième étoile */
+}
+
+
+
 
 
 
@@ -516,6 +527,10 @@ nav li a:hover::before {
     font-size: 14px; /* Taille de police spécifique */
 }
 
+/* Style pour la cinquième étoile gris clair */
+.stars__container--spensored i:nth-child(5) {
+    color: var(--main-bg-color); /* Couleur gris clair pour la cinquième étoile */
+}
 
 
 
@@ -850,7 +865,7 @@ padding: 34px 44px 46px 36px; /* Rembourrage spécifique */
     height: 150px;
   }
   .activities h2 {
-    margin-bottom: 34px;
+    margin-bottom: 25px;
   }
 }       
 
