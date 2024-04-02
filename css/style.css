@@ -302,7 +302,7 @@ nav li a:hover::before {
 }
 
 .offers {
-    margin: 0 50px 60px 50px; /* Marge extérieure spécifique */
+    margin: 0 50px 60px 50px; /* Marge extérieure spécifique */ /* Marge extérieure spécifique */
     display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
 }
 
@@ -869,9 +869,7 @@ padding: 34px 44px 46px 36px; /* Rembourrage spécifique */
   }
 }       
 
-.footer__copyright {
-    font: 700 18px "Raleway", sans-serif;
-}
+
 
   
 
@@ -1114,14 +1112,7 @@ footer h3 {
     text-decoration: underline;
 }
 
-.footer__copyright {
-    width: 100%; /* Prend toute la largeur */
-    text-align: center; /* Centre le texte */
-    position: absolute;
-    bottom: 0px; /* Ajustement selon votre préférence */
-    left: 0;
 
-}
 
 
 
