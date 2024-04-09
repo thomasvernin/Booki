@@ -10,9 +10,9 @@ Supprime les puces ou les numéros de liste pour tous les éléments de liste.  
    
   
   
-  /* Définit une largeur maximale de 1400 pixels pour le corps de la page et centre le contenu horizontalement en utilisant des marges automatiques à gauche et à droite. */
+  /* Définit une largeur maximale de 1440 pixels pour le corps de la page et centre le contenu horizontalement en utilisant des marges automatiques à gauche et à droite. */
   body {
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
   }
   
@@ -36,7 +36,7 @@ Supprime les puces ou les numéros de liste pour tous les éléments de liste.  
   haut, 55 pixels à droite, 37 pixels en bas, et 55 pixels à gauche.*/
 
   header {
-    margin: 0px 55px 37px 55px;
+    margin: 0px 55px 37px 55px; /*haut, droite, bas, gauche*/ 
   }
   
   
@@ -661,27 +661,34 @@ footer h3 {
 @media (min-width: 768px) and (max-width: 1024px) {
 
     /*Header*/
+  /* Style de l'en-tête */
   
+    /* Marge de l'en-tête , haut droite bas gauche */
     header {
       margin: 0px 30px 37px 30px;
     }
   
+    /* Style de la taille de la police de l'entrée de recherche */
     .input-search input {
       font-size: 16px;
     }
   
+    /* Espacement entre les boutons de la barre de filtrage */
     .filter-bar__btns {
       gap: 10px;
     }
   
+    /* Style des boutons de la barre de filtrage */
     .filter-bar__btn {
       padding: 4px 16px;
       font-size: 15px;
     }
   
+    /* Espacement entre les éléments de la barre de filtrage */
     .filter-bar {
       gap: 10px;
     }
+
 
 
   
