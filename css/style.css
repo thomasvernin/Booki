@@ -230,6 +230,7 @@ nav li a:hover::before {
   
   .filter-bar h2 {
     font: 700 18px "Raleway", sans-serif;
+    
   }
   
   .filter-bar__btns {
@@ -673,10 +674,15 @@ footer h3 {
       font-size: 16px;
     }
   
+
+  
+
     /* Espacement entre les boutons de la barre de filtrage */
     .filter-bar__btns {
       gap: 10px;
     }
+
+    
   
     /* Style des boutons de la barre de filtrage */
     .filter-bar__btn {
@@ -686,9 +692,14 @@ footer h3 {
   
     /* Espacement entre les éléments de la barre de filtrage */
     .filter-bar {
-      gap: 10px;
+      display: flex;
+      flex-direction: column;
     }
 
+    .filter-bar h2 {
+      margin-left: -900px; 
+      /* Style de l'élément h2 */
+    }
 
 
   
